@@ -1,64 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutoring Jedi - Master Your Learning Journey</title>
+
+    <title>Tutoring Jedi | Personalized Academic Tutoring</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Tutoring Jedi offers personalized Math, Science, and test prep tutoring to help students succeed with confidence.">
+    <meta name="keywords" content="tutoring, math tutor, science tutor, SAT, ACT, personalized tutoring">
+    <meta name="author" content="Neil Chakraborty">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tutoring Jedi – Master Your Learning Journey">
+    <meta property="og:description" content="Personalized tutoring to help students excel academically with confidence.">
+    <meta property="og:type" content="website">
 
     <style>
-        * {
+        /* Reset */
+        *, *::before, *::after {
             box-sizing: border-box;
         }
 
         body {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             line-height: 1.6;
             color: #333;
+            background-color: #ffffff;
         }
 
         p {
             margin-bottom: 1.25rem;
         }
 
+        /* Header */
         header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            padding: 2rem 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            padding: 2.5rem 1rem;
             text-align: center;
         }
 
+        /* Navigation */
         nav {
-            background: #2a5298;
-            padding: 1rem 0;
+            background-color: #2a5298;
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
         }
 
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             margin: 0;
             padding: 0;
-            flex-wrap: wrap;
         }
 
         nav a {
-            color: white;
+            color: #ffffff;
             text-decoration: none;
-            padding: 0.5rem 1.5rem;
+            padding: 0.75rem 1.5rem;
+            display: block;
         }
 
-        nav a:hover {
-            background: rgba(255,255,255,0.1);
+        nav a:hover,
+        nav a:focus {
+            background-color: rgba(255,255,255,0.15);
+            outline: none;
         }
 
+        /* Layout */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 1.5rem;
         }
 
         section {
@@ -66,28 +85,21 @@
         }
 
         section:nth-of-type(even) {
-            background: #f8f9fa;
+            background-color: #f8f9fa;
         }
 
         h2 {
-            color: #1e3c72;
-            font-size: 2rem;
             text-align: center;
+            color: #1e3c72;
             margin-bottom: 2rem;
         }
 
         h3 {
             color: #2a5298;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
         }
 
-        .about-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 1.1rem;
-        }
-
+        /* Cards */
         .vision-mission {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -95,35 +107,49 @@
         }
 
         .vm-card {
-            background: white;
+            background-color: #ffffff;
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease;
         }
 
-        .tutor-bio {
-            display: flex;
-            gap: 3rem;
-            align-items: flex-start;
-            flex-wrap: wrap;
-        }
-
-        .tutor-image-placeholder {
-            width: 250px;
-            height: 250px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-radius: 50%;
+        /* Tutor Card */
+        .tutor-card-header {
             display: flex;
             align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 4rem;
-            font-weight: bold;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
         }
 
-        .tutor-info {
-            flex: 1;
-            min-width: 300px;
+        .tutor-image-ring {
+            padding: 4px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+        }
+
+        .tutor-image {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        .tutor-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .tutor-card:hover .tutor-image img {
+            transform: scale(1.08);
+        }
+
+        .tutor-card:hover {
+            box-shadow: 0 10px 24px rgba(42,82,152,0.35);
         }
 
         .title {
@@ -131,119 +157,109 @@
             color: #2a5298;
         }
 
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+        /* Scroll animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
         }
 
-        .testimonial {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
+        /* Footer */
         footer {
-            background: #1e3c72;
-            color: white;
+            background-color: #1e3c72;
+            color: #ffffff;
             text-align: center;
-            padding: 2rem 0;
+            padding: 2rem 1rem;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .tutor-card-header {
+                flex-direction: column;
+                text-align: center;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<header>
+<header role="banner">
     <h1>⚔️ Tutoring Jedi</h1>
     <p>Master Your Learning Journey</p>
 </header>
 
-<nav>
+<nav aria-label="Primary navigation">
     <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#vision-mission">Vision & Mission</a></li>
-        <li><a href="#courses">Courses</a></li>
+        <li><a href="#philosophy">Teaching Philosophy</a></li>
         <li><a href="#tutor">Meet Neil</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
+<main id="main-content">
+
 <section id="about">
     <div class="container">
         <h2>About Tutoring Jedi</h2>
-        <div class="about-content">
-            <p>Welcome to Tutoring Jedi, where we believe every student has the potential to become a master of their own learning journey.</p>
-            <p>We empower students to build confidence, develop critical thinking skills, and discover their unique learning styles.</p>
-            <p>Whether preparing for exams or mastering challenging concepts, Tutoring Jedi provides expert guidance for success.</p>
-        </div>
+        <p>
+            Tutoring Jedi empowers students to master challenging subjects, build confidence,
+            and achieve academic excellence through personalized instruction.
+        </p>
     </div>
 </section>
 
-<section id="vision-mission">
+<section id="philosophy-tutor">
     <div class="container">
-        <h2>Vision & Mission</h2>
+        <h2>Teaching Philosophy & Tutor</h2>
+
         <div class="vision-mission">
-            <div class="vm-card">
-                <h3>Our Vision</h3>
-                <p>To unlock every student’s academic potential and inspire a lifelong love of learning.</p>
-            </div>
-            <div class="vm-card">
-                <h3>Our Mission</h3>
-                <p>To provide personalized, high-quality tutoring tailored to each student's goals and learning style.</p>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section id="courses">
-    <div class="container">
-        <h2>Courses & Teaching Philosophy</h2>
+            <article class="vm-card reveal" id="philosophy">
+                <h3>Teaching Philosophy</h3>
+                <p>
+                    Neil believes that effective teaching starts with understanding each student as an individual.
+                    Instruction is tailored to strengths, challenges, and learning styles.
+                </p>
+                <p>
+                    The focus is on conceptual clarity, critical thinking, and confidence-building for long-term success.
+                </p>
+            </article>
 
-        <p>Neil brings years of experience in personalized education, focusing on understanding each student as an individual.</p>
+            <article class="vm-card tutor-card reveal" id="tutor">
+                <div class="tutor-card-header">
 
-        <p>He helps students improve grades, confidence, and long-term academic skills across multiple subjects.</p>
+                    <div class="tutor-image-ring">
+                        <div class="tutor-image">
+                            <img src="Neil.jpg"
+                                 alt="Neil Chakraborty, Founder and Lead Tutor"
+                                 loading="lazy">
+                        </div>
+                    </div>
 
-        <p>Every student can excel with the right tools, encouragement, and guidance.</p>
-    </div>
-</section>
+                    <div>
+                        <h3>Neil Chakraborty</h3>
+                        <p class="title">Founder & Lead Tutor</p>
+                    </div>
+                </div>
 
-<section id="tutor">
-    <div class="container">
-        <h2>Meet Your Tutor</h2>
+                <p>
+                    Neil has over 15 years of experience tutoring Math, Science,
+                    and preparing students for SAT, ACT, GMAT, and GRE exams.
+                </p>
 
-        <div class="tutor-bio">
-            <div class="tutor-image-placeholder">N</div>
+                <p>
+                    He works at the University of Toronto and is an adjunct professor
+                    at Seneca Polytechnic with extensive experience in analytics and education.
+                </p>
+            </article>
 
-            <div class="tutor-info">
-                <h3>Neil Chakraborty</h3>
-                <p class="title">Founder & Lead Tutor</p>
-
-                <p>Neil has 15+ years of tutoring experience in Math, Science, and standardized test preparation.</p>
-
-                <p>He currently works at the University of Toronto and is an adjunct professor at Seneca Polytechnic.</p>
-
-                <p>Outside of work, he enjoys running marathons, swimming, and hiking.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="testimonials">
-    <div class="container">
-        <h2>What Students & Parents Say</h2>
-
-        <div class="testimonials-grid">
-            <div class="testimonial">
-                <p>Neil transformed my daughter's confidence and grades.</p>
-                <strong>— Sarah M., Parent</strong>
-            </div>
-            <div class="testimonial">
-                <p>I finally understood chemistry and earned an A.</p>
-                <strong>— Marcus T., Student</strong>
-            </div>
         </div>
     </div>
 </section>
@@ -251,17 +267,34 @@
 <section id="contact">
     <div class="container">
         <h2>Contact Us</h2>
-
         <p><strong>Email:</strong> tutoringjedi@gmail.com</p>
         <p><strong>Location:</strong> Thornhill, Ontario, Canada</p>
-        <p><strong>Hours:</strong> Monday – Saturday, 9:00 AM – 8:00 PM</p>
+        <p><strong>Hours:</strong> Monday–Saturday, 9:00 AM–8:00 PM</p>
     </div>
 </section>
 
-<footer>
+</main>
+
+<footer role="contentinfo">
     <p>&copy; 2026 Tutoring Jedi. All rights reserved.</p>
     <p>Empowering students to master their potential.</p>
 </footer>
+
+<script>
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealOnScroll = () => {
+        revealElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 80) {
+                el.classList.add('visible');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+</script>
 
 </body>
 </html>
