@@ -1,20 +1,24 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutoring Jedi - Master Your Learning Journey</title>
+
     <style>
         * {
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
         }
 
         body {
+            margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
         }
 
         header {
@@ -22,17 +26,6 @@
             color: white;
             padding: 2rem 0;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
         }
 
         nav {
@@ -41,13 +34,14 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
+            margin: 0;
+            padding: 0;
             flex-wrap: wrap;
         }
 
@@ -55,8 +49,6 @@
             color: white;
             text-decoration: none;
             padding: 0.5rem 1.5rem;
-            display: block;
-            transition: background 0.3s;
         }
 
         nav a:hover {
@@ -73,25 +65,26 @@
             padding: 4rem 0;
         }
 
-        section:nth-child(even) {
+        section:nth-of-type(even) {
             background: #f8f9fa;
         }
 
         h2 {
             color: #1e3c72;
             font-size: 2rem;
-            margin-bottom: 1.5rem;
             text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            color: #2a5298;
+            margin-bottom: 1rem;
         }
 
         .about-content {
             max-width: 800px;
             margin: 0 auto;
             text-align: center;
-        }
-
-        .about-content p {
-            margin-bottom: 1.5rem;
             font-size: 1.1rem;
         }
 
@@ -99,7 +92,6 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 2rem;
         }
 
         .vm-card {
@@ -109,30 +101,17 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
-        .vm-card h3 {
-            color: #2a5298;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
         .tutor-bio {
             display: flex;
             gap: 3rem;
-            align-items: start;
-            max-width: 1000px;
-            margin: 2rem auto;
+            align-items: flex-start;
             flex-wrap: wrap;
-        }
-
-        .tutor-image {
-            flex: 0 0 250px;
-            text-align: center;
         }
 
         .tutor-image-placeholder {
             width: 250px;
             height: 250px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #667eea, #764ba2);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -140,7 +119,6 @@
             color: white;
             font-size: 4rem;
             font-weight: bold;
-            margin: 0 auto 1rem;
         }
 
         .tutor-info {
@@ -148,24 +126,15 @@
             min-width: 300px;
         }
 
-        .tutor-info h3 {
-            color: #1e3c72;
-            font-size: 1.8rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .tutor-info .title {
-            color: #2a5298;
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
+        .title {
             font-style: italic;
+            color: #2a5298;
         }
 
         .testimonials-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 2rem;
         }
 
         .testimonial {
@@ -173,53 +142,6 @@
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            position: relative;
-        }
-
-        .testimonial::before {
-            content: '"';
-            font-size: 4rem;
-            color: #2a5298;
-            opacity: 0.2;
-            position: absolute;
-            top: 10px;
-            left: 20px;
-        }
-
-        .testimonial-text {
-            margin-bottom: 1rem;
-            font-style: italic;
-            position: relative;
-            z-index: 1;
-        }
-
-        .testimonial-author {
-            font-weight: bold;
-            color: #1e3c72;
-        }
-
-        .contact-info {
-            max-width: 600px;
-            margin: 2rem auto;
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .contact-item {
-            padding: 1rem 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        .contact-item:last-child {
-            border-bottom: none;
-        }
-
-        .contact-item strong {
-            color: #1e3c72;
-            display: inline-block;
-            width: 120px;
         }
 
         footer {
@@ -227,141 +149,119 @@
             color: white;
             text-align: center;
             padding: 2rem 0;
-            margin-top: 2rem;
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>⚔️ Tutoring Jedi</h1>
-        <p>Master Your Learning Journey</p>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#vision-mission">Vision & Mission</a></li>
-            <li><a href="#tutor">Meet Neil</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<header>
+    <h1>⚔️ Tutoring Jedi</h1>
+    <p>Master Your Learning Journey</p>
+</header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Tutoring Jedi</h2>
-            <div class="about-content">
-                <p>Welcome to Tutoring Jedi, where we believe every student has the potential to become a master of their own learning journey. Like the legendary Jedi, we understand that true mastery comes from dedication, personalized guidance, and the right mentorship.</p>
-                
-                <p>At Tutoring Jedi, we don't just teach subjects – we empower students to develop critical thinking skills, build confidence, and discover their unique learning styles. Our approach combines proven educational techniques with innovative strategies tailored to each student's individual needs and goals.</p>
-                
-                <p>Whether you're struggling with challenging concepts, preparing for important exams, or looking to excel beyond your current level, Tutoring Jedi provides the expert guidance and support you need to succeed.</p>
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#vision-mission">Vision & Mission</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#tutor">Meet Neil</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <div class="container">
+        <h2>About Tutoring Jedi</h2>
+        <div class="about-content">
+            <p>Welcome to Tutoring Jedi, where we believe every student has the potential to become a master of their own learning journey.</p>
+            <p>We empower students to build confidence, develop critical thinking skills, and discover their unique learning styles.</p>
+            <p>Whether preparing for exams or mastering challenging concepts, Tutoring Jedi provides expert guidance for success.</p>
+        </div>
+    </div>
+</section>
+
+<section id="vision-mission">
+    <div class="container">
+        <h2>Vision & Mission</h2>
+        <div class="vision-mission">
+            <div class="vm-card">
+                <h3>Our Vision</h3>
+                <p>To unlock every student’s academic potential and inspire a lifelong love of learning.</p>
+            </div>
+            <div class="vm-card">
+                <h3>Our Mission</h3>
+                <p>To provide personalized, high-quality tutoring tailored to each student's goals and learning style.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="vision-mission">
-        <div class="container">
-            <h2>Vision & Mission</h2>
-            <div class="vision-mission">
-                <div class="vm-card">
-                    <h3>Our Vision</h3>
-                    <p>To create a world where every student has access to personalized, high-quality tutoring that unlocks their full academic potential and inspires a lifelong love of learning. We envision education as an empowering journey where challenges become opportunities and every student discovers the confidence to master any subject.</p>
-                </div>
-                <div class="vm-card">
-                    <h3>Our Mission</h3>
-                    <p>To provide exceptional one-on-one tutoring that adapts to each student's unique learning style, pace, and goals. We are committed to building strong foundations, fostering critical thinking skills, and nurturing academic confidence through patient guidance, proven methodologies, and genuine care for each student's success.</p>
-                </div>
+<section id="courses">
+    <div class="container">
+        <h2>Courses & Teaching Philosophy</h2>
+
+        <p>Neil brings years of experience in personalized education, focusing on understanding each student as an individual.</p>
+
+        <p>He helps students improve grades, confidence, and long-term academic skills across multiple subjects.</p>
+
+        <p>Every student can excel with the right tools, encouragement, and guidance.</p>
+    </div>
+</section>
+
+<section id="tutor">
+    <div class="container">
+        <h2>Meet Your Tutor</h2>
+
+        <div class="tutor-bio">
+            <div class="tutor-image-placeholder">N</div>
+
+            <div class="tutor-info">
+                <h3>Neil Chakraborty</h3>
+                <p class="title">Founder & Lead Tutor</p>
+
+                <p>Neil has 15+ years of tutoring experience in Math, Science, and standardized test preparation.</p>
+
+                <p>He currently works at the University of Toronto and is an adjunct professor at Seneca Polytechnic.</p>
+
+                <p>Outside of work, he enjoys running marathons, swimming, and hiking.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="tutor">
-        <div class="container">
-            <h2>Meet Your Tutor</h2>
-            <div class="tutor-bio">
-                <div class="tutor-image">
-                    <div class="tutor-image-placeholder">N</div>
-                </div>
-                <div class="tutor-info">
-                    <h3>Neil</h3>
-                    <p class="title">Founder & Lead Tutor</p>
-                    <p>Neil brings years of dedicated experience in personalized education, with a passion for helping students unlock their full potential. His teaching philosophy centers on understanding each student as an individual, identifying their unique strengths and challenges, and crafting customized learning strategies that make complex concepts accessible and engaging.</p>
-                     <br>
-                    <p>With expertise across multiple subjects and grade levels, Neil has helped countless students not only improve their grades but also develop the critical thinking skills and confidence needed for long-term academic success. His patient, supportive approach creates a comfortable learning environment where students feel encouraged to ask questions, make mistakes, and grow.</p>
-                      <br>
-                    <p>Neil believes that every student can excel when given the right tools, techniques, and encouragement. His commitment to excellence and genuine investment in each student's journey has made him a trusted mentor for families throughout the community.</p>
-                   <br>
-                    <p> Neil Chakraborty has 15 years+ tutoring experience in high school Math and Science courses and counselling for competitive exams like SAT, ACT, GMAT & GRE. He is passionate in teaching students and helping them succeed beyond their potential. He consistently guided students to SAT score improvements of 100–150 points and ACT improvements of 5-10 points, helping them achieve results that supported successful admissions to Ivy League and top schools across the globe. His students have received acceptances to Harvard, Stanford, UPenn, Yale, UChicago, USC, Rice, UC Berkeley, John Hopkins, Northwestern, Universty of Michigan, Northeastern, Tufts, UCs, BU, UofT, UBC and McGill. He also co-founded an admission counselling consultancy and successfully helped 100s of individuals gain admission to the best business schools across the world.  </p>
-                      <br>
-                    <p> In his day job, he is an institutional research and planning analyst working at the University of Toronto, top ranked university in Canada. He also is an adjunct Professor at Seneca Polytechnic and teaches a variety of courses including Business Analytics and Research Methods. He has spent more than two decades working in research, project management, data analytics spanning multiple countries including US and Canada. He has a double Masters in Business Administration from University of Utah, and earned certification in Project management and SAS. He has also undergraduate and master's degrees majoring in Physics and Statistics. </p>
-                      <br>
-                    <p> He is also active outside of work and is a Board of Director at multiple non-profits in Canada. Among his other interests, he enjoys running marathons, swimming and hiking. </p>
-            <br>
+<section id="testimonials">
+    <div class="container">
+        <h2>What Students & Parents Say</h2>
+
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <p>Neil transformed my daughter's confidence and grades.</p>
+                <strong>— Sarah M., Parent</strong>
+            </div>
+            <div class="testimonial">
+                <p>I finally understood chemistry and earned an A.</p>
+                <strong>— Marcus T., Student</strong>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="testimonials">
-        <div class="container">
-            <h2>What Students & Parents Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial">
-                    <p class="testimonial-text">Neil transformed my daughter's approach to math. She went from avoiding homework to actually enjoying problem-solving. Her grades improved dramatically, but more importantly, she gained confidence in her abilities.</p>
-                    <p class="testimonial-author">— Sarah M., Parent</p>
-                </div>
-                <div class="testimonial">
-                    <p class="testimonial-text">I was struggling with chemistry and thought I'd never understand it. Neil broke everything down in a way that finally made sense. Thanks to his tutoring, I not only passed but got an A in the course!</p>
-                    <p class="testimonial-author">— Marcus T., Grade 11 Student</p>
-                </div>
-                <div class="testimonial">
-                    <p class="testimonial-text">What sets Neil apart is his patience and ability to explain concepts in multiple ways until they click. He never made my son feel bad for not understanding something the first time. We're so grateful for his support.</p>
-                    <p class="testimonial-author">— Jennifer K., Parent</p>
-                </div>
-                <div class="testimonial">
-                    <p class="testimonial-text">Neil helped me prepare for my university entrance exams and I exceeded my target scores. His structured approach and practice materials were exactly what I needed. Highly recommend!</p>
-                    <p class="testimonial-author">— Priya S., Grade 12 Student</p>
-                </div>
-                <div class="testimonial">
-                    <p class="testimonial-text">We've tried other tutors before, but Neil's personalized approach really makes the difference. He takes time to understand how our child learns best and adapts his teaching accordingly. Worth every penny.</p>
-                    <p class="testimonial-author">— Robert L., Parent</p>
-                </div>
-                <div class="testimonial">
-                    <p class="testimonial-text">I used to dread studying, but Neil made learning actually interesting. He uses real-world examples and makes connections that help everything make sense. My grades have never been better!</p>
-                    <p class="testimonial-author">— Alex C., Grade 10 Student</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <strong>Email:</strong> tutoringjedi@gmail.com
-                </div>
-                <div class="contact-item">
-                                   </div>
-                <div class="contact-item">
-                    <strong>Location:</strong> Thornhill, Ontario, Canada
-                </div>
-                <div class="contact-item">
-                    <strong>Hours:</strong> Monday - Saturday, 9:00 AM - 8:00 PM
-                </div>
-                <div class="contact-item">
-                    <strong>Availability:</strong> In-person and online sessions available
-                </div>
-            </div>
-            <p style="text-align: center; margin-top: 2rem; color: #666;">
-                Ready to begin your learning journey? Contact us today to schedule a free consultation and discover how Tutoring Jedi can help you achieve your academic goals!
-            </p>
-        </div>
-    </section>
+        <p><strong>Email:</strong> tutoringjedi@gmail.com</p>
+        <p><strong>Location:</strong> Thornhill, Ontario, Canada</p>
+        <p><strong>Hours:</strong> Monday – Saturday, 9:00 AM – 8:00 PM</p>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Tutoring Jedi. All rights reserved.</p>
-        <p>Empowering students to master their potential.</p>
-    </footer>
+<footer>
+    <p>&copy; 2026 Tutoring Jedi. All rights reserved.</p>
+    <p>Empowering students to master their potential.</p>
+</footer>
+
 </body>
 </html>
