@@ -178,7 +178,24 @@
             font-weight: bold;
             color: #1e3c72;
         }
-        
+
+        .testimonial {
+          background: #ffffff;
+          padding: 1.75rem;
+          border-radius: 16px;
+          box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .testimonial:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 14px 30px rgba(30,60,114,0.25);
+        }
+
+        .testimonial-text {
+          font-style: italic;
+        }
+
         /* Scroll animation */
         .reveal {
             opacity: 0;
@@ -199,6 +216,27 @@
             padding: 2rem 1rem;
         }
 
+        .hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  width: 42%;
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+
+.tagline {
+  font-size: 1.15rem;
+  opacity: 0.9;
+}
+
+
         /* Mobile */
         @media (max-width: 768px) {
             .tutor-card-header {
@@ -217,16 +255,28 @@
             loading="lazy">
     <h1>  Tutoring Jedi</h1>
     <p>Be the Wisdom be with You</p>
+    <div class="hero-wrapper">
+  <div class="hero-text">
+  <p class="tagline">Be the Wisdom Be With You</p>
+  </div>
+
+  <img src="hero.webp"
+       alt="Student studying with tutor"
+       class="hero-image"
+       loading="eager">
+</div>
+
 </header>
 
 <nav aria-label="Primary navigation">
     <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#vision-mission">Vision & Mission</a></li>
-        <li><a href="#philosophy">Teaching Philosophy</a></li>
-        <li><a href="#tutor">Meet Neil</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">📘 About</a></li>
+        <li><a href="#vision-mission">🎯 Vision</a></li>
+        <li><a href="#philosophy">🧠 Philosophy</a></li>
+        <li><a href="#tutor">👨‍🏫 Meet Neil</a></li>
+        <li><a href="#testimonials">⭐ Testimonials</a></li>
+        <li><a href="#contact">✉️ Contact</a></li>
+
     </ul>
 </nav>
 
