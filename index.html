@@ -430,14 +430,15 @@
 <body>
 
 <header role="banner">
-       <img src="logo.png"
-            alt="Tutoring Jedi"
-            loading="lazy">
-    <h1>  Tutoring Jedi</h1>
-    <p>Be the Wisdom be with You</p>
-    <div class="hero-wrapper">
-  <div class="hero-text">
-  </div>
+    <div class="header-content">
+        <img src="logo.png" alt="Tutoring Jedi Logo" loading="eager">
+        <div class="header-text">
+            <h1>Tutoring Jedi</h1>
+            <!-- 🟡 CHANGE: Fixed typo "Be the Wisdom" → "May the Wisdom" -->
+            <p>May the Wisdom be with You</p>
+        </div>
+    </div>
+</header>
 
   <img src="hero.webp"
        alt="Student studying with tutor"
@@ -461,10 +462,24 @@
 
 <main id="main-content">
 
+    <section class="hero">
+    <div class="hero-wrapper">
+        <div class="hero-text">
+            <h2>Master Your Learning Journey</h2>
+            <p>Personalized tutoring in Math, Science, and test prep that unlocks your full potential and builds lasting confidence.</p>
+            <a href="#contact" class="cta-button">Schedule a Consultation</a>
+        </div>
+        <div class="hero-image-container">
+            <img src="hero.webp" alt="Student studying with tutor" class="hero-image" loading="eager">
+        </div>
+    </div>
+</section>
+
+    
 <section id="about">
     <div class="container">
         <h2>About Tutoring Jedi</h2>
-        <div class="about-content"> 
+        <div class="about-content reveal"> 
             <p>
                 Welcome to Tutoring Jedi, where we believe every student has the potential to become a master of their own learning journey. 
                 Like the legendary Jedi, we understand that true mastery comes from dedication, personalized guidance, and the right mentorship.
@@ -481,13 +496,13 @@
         </section> <section id="vision-mission"> 
             <div class="container"> 
             <h2>Vision & Mission</h2> <div class="vision-mission"> 
-                <div class="vm-card"> 
+                <div class="vm-card reveal"> 
                     <h3>Our Vision</h3>
                     <p>
                         To create a world where every student has access to personalized, high-quality tutoring that unlocks their full academic potential and inspires a lifelong love of learning. 
                         We envision education as an empowering journey where challenges become opportunities and every student discovers the confidence to master any subject.
                     </p> 
-                </div> <div class="vm-card"> 
+                </div> <div class="vm-card reveal"> 
                     <h3>Our Mission</h3> 
                     <p>
                         To provide exceptional one-on-one tutoring that adapts to each student's unique learning style, pace, and goals. 
@@ -517,7 +532,6 @@
 
             <article class="vm-card tutor-card reveal" id="tutor">
                 <div class="tutor-card-header">
-
                     <div class="tutor-image-ring">
                         <div class="tutor-image">
                             <img src="Neil.jpg"
@@ -558,33 +572,40 @@
     <div class="container"> 
         <h2>What Students & Parents Say</h2> 
         <div class="testimonials-grid"> 
-            <div class="testimonial"> 
+            <div class="testimonial reveal"> 
+                <div class="stars">★★★★★</div>
     <p class="testimonial-text">Neil transformed my daughter's approach to math. She went from avoiding homework to actually enjoying problem-solving. 
         Her grades improved dramatically, but more importantly, she gained confidence in her abilities.
     </p> 
     <p class="testimonial-author">— Sarah M., Parent</p> 
             </div> 
-            <div class="testimonial"> 
+            <div class="testimonial reveal"> 
+                <div class="stars">★★★★★</div>
     <p class="testimonial-text">I was struggling with chemistry and thought I'd never understand it. Neil broke everything down in a way that finally made sense. Thanks to his tutoring, I not only passed but got an A in the course!
     </p> 
         <p class="testimonial-author">— Marcus T., Grade 11 Student</p> 
             </div> 
-            <div class="testimonial"> 
+            <div class="testimonial reveal"> 
+                <div class="stars">★★★★★</div>
             <p class="testimonial-text">What sets Neil apart is his patience and ability to explain concepts in multiple ways until they click. He never made my son feel bad for not understanding something the first time. 
                 We're so grateful for his support.
             </p> 
             <p class="testimonial-author">— Jennifer K., Parent</p> 
             </div> 
-            <div class="testimonial"> 
+            <div class="testimonial reveal"> 
+                <div class="stars">★★★★★</div>
                 <p class="testimonial-text">Neil helped me prepare for my university entrance exams and I exceeded my target scores. His structured approach and practice materials were exactly what I needed. Highly recommend!</p> 
                 <p class="testimonial-author">— Priya S., Grade 12 Student</p> 
             </div> 
-            <div class="testimonial"> 
+            <div class="testimonial reveal"> 
+                <div class="stars">★★★★★</div>
                 <p class="testimonial-text">We've tried other tutors before, but Neil's personalized approach really makes the difference. He takes time to understand how our child learns best and adapts his teaching accordingly. Worth every penny.
                 </p> 
                     <p class="testimonial-author">— Robert L., Parent</p> 
             </div> 
-            <div class="testimonial"> <p class="testimonial-text">I used to dread studying, but Neil made learning actually interesting. He uses real-world examples and makes connections that help everything make sense. My grades have never been better!
+            <div class="testimonial reveal"> 
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">I used to dread studying, but Neil made learning actually interesting. He uses real-world examples and makes connections that help everything make sense. My grades have never been better!
             </p> 
                 <p class="testimonial-author">— Alex C., Grade 10 Student</p> 
     </div> 
