@@ -235,24 +235,38 @@
         /* Cards */
         .vision-mission {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
         }
 
         .vm-card {
             background-color: #ffffff;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
             transition: box-shadow 0.3s ease;
+            border-top: 4px solid #2a5298;
         }
 
+
+         .vm-card:hover {
+            /* 🟡 CHANGE: Enhanced hover effect */
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(30, 60, 114, 0.15);
+        }
+        
         /* Tutor Card */
+
+        .tutor-card {
+            border-top-color: #f59e0b;
+        }
+
+        
         .tutor-card-header {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
+            gap: 2rem;
+            margin-bottom: 2rem;
         }
 
         .tutor-image-ring {
