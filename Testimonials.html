@@ -6,9 +6,57 @@
   <title>Testimonials | Tutoring Jedi</title>
   <meta name="description" content="What students and parents say about Tutoring Jedi.">
   <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
 
+
+  <style>
+            .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+            .testimonial-author {
+            font-weight: bold;
+            color: #1e3c72;
+        }
+
+        .testimonial {
+          background: #ffffff;
+          padding: 2rem;
+          border-radius: 16px;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        border-left: 4px solid #f59e0b;
+        }
+
+        .testimonial:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 14px 30px rgba(30,60,114,0.25);
+        }
+        .stars {
+        color: #f59e0b;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+          font-style: italic;
+          color: #475569;
+           margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+       .testimonial-author {
+       font-weight: 600;
+       color: #1e3c72;
+        }
+ </style>
+
+  </head>
+<body>
+  
 <section id="testimonials"> 
     <div class="container"> 
         <h2>What Students & Parents Say</h2> 
