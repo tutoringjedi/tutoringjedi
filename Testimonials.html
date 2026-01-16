@@ -2,10 +2,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Testimonials | Tutoring Jedi</title>
-  <meta name="description" content="What students and parents say about Tutoring Jedi.">
-  <link rel="stylesheet" href="/css/styles.css">
+  
+ <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tutoring Jedi | Personalized Academic Tutoring</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Tutoring Jedi offers personalized Math, Science, and test prep tutoring to help students succeed with confidence.">
+    <meta name="keywords" content="tutoring, math tutor, science tutor, SAT, ACT, GRE, GMAT personalized tutoring">
+    <meta name="author" content="Neil Chakraborty">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tutoring Jedi – Master Your Learning Journey">
+    <meta property="og:description" content="Personalized tutoring to help students excel academically with confidence.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 
   <style>
@@ -303,7 +319,26 @@
 </head>
 
   <body>
-    
+
+    <header role="banner">
+    <div class="header-content">
+        <img src="logo.png" alt="Tutoring Jedi Logo" loading="eager">
+        <div class="header-text">
+            <h1>Tutoring Jedi</h1>
+            <p>May the Wisdom be with You</p>
+        </div>
+    </div>
+</header>
+
+<!--  <img src="hero.webp"
+       alt="Student studying with tutor"
+       class="hero-image"
+       loading="eager">
+    -->
+</div>
+
+</header>
+
 <section id="testimonials"> 
     <div class="container"> 
         <h2>What Students & Parents Say</h2> 
@@ -347,11 +382,33 @@
     </div> 
     </div> 
 </div>  
+     </section>  
     
 </div> 
 <a href="mailto:tutoringjedi@gmail.com" class="cta-button" style="margin-top: 2rem;">Schedule Your Free Consultation</a>
    </div> 
 
+    <footer role="contentinfo">
+    <p>&copy; 2026 Tutoring Jedi. All rights reserved.</p>
+    <p>Empowering students to master their potential.</p>
+</footer>
+
+    <script>
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealOnScroll = () => {
+        revealElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 80) {
+                el.classList.add('visible');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+</script>
+    
 </body>
 </html>
 
