@@ -1,1 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tutoring Jedi | Personalized Academic Tutoring</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Tutoring Jedi offers personalized Math, Science, and test prep tutoring to help students succeed with confidence.">
+    <meta name="keywords" content="tutoring, math tutor, science tutor, SAT, ACT, GRE, GMAT personalized tutoring">
+    <meta name="author" content="Neil Chakraborty">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tutoring Jedi – Master Your Learning Journey">
+    <meta property="og:description" content="Personalized tutoring to help students excel academically with confidence.">
+    <meta property="og:type" content="website">
+
+   <!-- 🟡 CHANGE: Added Google Fonts for professional typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        /* 🟡 CHANGE: Added smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            font-size: 17px;
+            color: #334155;
+            background-color: #ffffff;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+        }
+        /* Header */
+        header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+   .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+        
+/* Logo sizing */
+    header img {
+    height: 70px;
+    width: auto;
+    flex-shrink: 0;
+    mix-blend-mode: multiply;
+}
+
+    .header-text p {
+    margin: 0.25rem 0 0 0;
+    font-size: 1rem;
+    opacity: 0.95;
+    font-style: italic;
+}
+
+        
+        /* Navigation */
+        nav {
+            background-color: #2a5298;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+         .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1.5rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 1.00rem 1.25rem;
+            display: block;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background-color: rgba(255,255,255,0.2);
+            outline: none;
+            transform: translateY(-1px);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+                /* 🟡 CHANGE: NEW - Hero Section (moved from header) */
+        .hero {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 5rem 2rem;
+        }
+
+        .hero-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* 🟡 CHANGE: Increased gap from 2rem to 4rem */
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+       .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h2 {
+            font-size: 2.75rem;
+            color: #1e3c72;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 1.25rem;
+            color: #475569;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+        }
+
+        /* 🟡 CHANGE: NEW - Hero image container */
+        .hero-image-container {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .hero-image {
+            width: 100%;
+            border-radius: 20px;
+            /* 🟡 CHANGE: Enhanced shadow */
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        section:nth-of-type(even) {
+            background-color: #f8fafc;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1e3c72;
+            margin-bottom: 3rem;
+             font-size: 2.5rem;
+        }
+
+        h3 {
+            color: #2a5298;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        /* Cards */
+        .vision-mission {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .vm-card {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease;
+            border-top: 4px solid #2a5298;
+        }
+
+
+         .vm-card:hover {
+            /* 🟡 CHANGE: Enhanced hover effect */
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(30, 60, 114, 0.15);
+        }
+        
+        /* Tutor Card */
+
+        .tutor-card {
+            border-top-color: #f59e0b;
+        }
+
+        
+        .tutor-card-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .tutor-image-ring {
+            padding: 5px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .tutor-image {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        .tutor-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .tutor-card:hover .tutor-image img {
+            transform: scale(1.08);
+        }
+
+        .tutor-card:hover {
+            box-shadow: 0 10px 24px rgba(42,82,152,0.35);
+        }
+
+        .title {
+            font-style: italic;
+           color: #f59e0b;
+            font-weight: 600;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+            .testimonial-author {
+            font-weight: bold;
+            color: #1e3c72;
+        }
+
+        .testimonial {
+          background: #ffffff;
+          padding: 2rem;
+          border-radius: 16px;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        border-left: 4px solid #f59e0b;
+        }
+
+        .testimonial:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 14px 30px rgba(30,60,114,0.25);
+        }
+
+        .stars {
+        color: #f59e0b;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+          font-style: italic;
+          color: #475569;
+           margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+       .testimonial-author {
+       font-weight: 600;
+       color: #1e3c72;
+        }
+
+         #contact {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+       color: white;
+        }
+
+        #contact h2 {
+        color: white;
+        }
+
+        #contact p {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        }
+
+        .contact-info {
+         max-width: 600px;
+         margin: 0 auto;
+         text-align: center;
+        }
+
+        .contact-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-item strong {
+            color: #f59e0b;
+        }
+
+        /* Scroll animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Footer */
+        footer {
+       background-color: #1e3c72;
+       color: #ffffff;
+       text-align: center;
+       padding: 2rem 1rem;
+        }
+
+        footer p {
+        margin: 0.5rem 0;
+        }
+
+         @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .tagline {
+  font-size: 1.15rem;
+  opacity: 0.9;
+}
+
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .tutor-card-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header role="banner">
+    <div class="header-content">
+        <img src="logo.png" alt="Tutoring Jedi Logo" loading="eager">
+        <div class="header-text">
+            <h1>Tutoring Jedi</h1>
+            <p>May the Wisdom be with You</p>
+        </div>
+    </div>
+</header>
+
+<!--  <img src="hero.webp"
+       alt="Student studying with tutor"
+       class="hero-image"
+       loading="eager">
+    -->
+</div>
+
+</header>
+
+<nav aria-label="Primary navigation">
+    <ul>
+        <a href="="/index.html "> About</a>
+        <a href="="/Philosophy.html "> Philosophy</a>
+        <a href="="/Meet_Neil.html "> Meet Neil</a>
+       <a href="/Testimonials.html">Testimonials</a>
+       <a href="/Contact.html"> Contact</a>
+
+    </ul>
+</nav>
+
+        </section> <section id="vision-mission"> 
+            <div class="container"> 
+            <h2>Vision & Mission</h2> <div class="vision-mission"> 
+                <div class="vm-card reveal"> 
+                    <h3>Our Vision</h3>
+                    <p>
+                        To create a world where every student has access to personalized, high-quality tutoring that unlocks their full academic potential and inspires a lifelong love of learning. 
+                        We envision education as an empowering journey where challenges become opportunities and every student discovers the confidence to master any subject.
+                    </p> 
+                </div> <div class="vm-card reveal"> 
+                    <h3>Our Mission</h3> 
+                    <p>
+                        To provide exceptional one-on-one tutoring that adapts to each student's unique learning style, pace, and goals. 
+                        We are committed to building strong foundations, fostering critical thinking skills, and nurturing academic confidence through patient guidance, proven methodologies, and genuine care for each student's success.
+                    </p> 
+                </div> 
+        </div> 
+</section>
+    
+        </section>
+    </div>
+</section>
+
+<section id="philosophy-tutor">
+    <div class="container">
+        <h2>Teaching Philosophy & Tutor</h2>
+
+        <div class="vision-mission">
+
+            <article class="vm-card reveal" id="philosophy">
+                <h2Teaching Philosophy</h2>
+                <p>Neil brings years of dedicated experience in personalized education, with a passion for helping students unlock their full potential. His teaching philosophy centers on understanding each student as an individual, identifying their unique strengths and challenges, and crafting customized learning strategies that make complex concepts accessible and engaging.</p> <br> <p>With expertise across multiple subjects and grade levels, Neil has helped countless students not only improve their grades but also develop the critical thinking skills and confidence needed for long-term academic success. His patient, supportive approach creates a comfortable learning environment where students feel encouraged to ask questions, make mistakes, and grow.</p> 
+                <br>
+                <p> Neil believes that every student can excel when given the right tools, techniques, and encouragement. His commitment to excellence and genuine investment in each student's journey has made him a trusted mentor for families throughout the community </p>
+                <p> The focus is on conceptual clarity, critical thinking, and confidence-building for long-term success. </p>
+            </article>
+
+            <article class="vm-card tutor-card reveal" id="tutor">
+                <div class="tutor-card-header">
+                    <div class="tutor-image-ring">
+                        <div class="tutor-image">
+                            <img src="Neil.jpg"
+                                 alt="Neil Chakraborty, Founder and Lead Tutor"
+                                 loading="lazy">
+                        </div>
+                    </div>
+    
+     </section>   
+<section id="contact_new">
+    <div class="container">
+     <h2>Get Started Today</h2>
+        <div class="contact-info">
+        <div class="contact-item">
+        <h2>Contact Us</h2>
+        <p><strong>Email:</strong> tutoringjedi@gmail.com</p>
+        <p><strong>Location:</strong> Toronto, Ontario, Canada</p>
+        <p><strong>Hours:</strong> Monday–Saturday, 9:00 AM–8:00 PM</p>
+         </div>
+        <a href="mailto:tutoringjedi@gmail.com" class="cta-button" style="margin-top: 2rem;">Schedule Your Free Consultation</a>
+
+<div
+</section>   
+<section id="calendly">
+        <!-- Calendly inline widget -->
+    <div 
+    class="calendly-inline-widget"
+      data-url="https://calendly.com/tutoringjedi/30min"
+      style="min-width:320px;height:700px;">
+    </div>
+
+    <script 
+        type="text/javascript"
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async>
+    </script>
+</section>
+            
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+    <p>&copy; 2026 Tutoring Jedi. All rights reserved.</p>
+    <p>Empowering students to master their potential.</p>
+</footer>
+
+<script>
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealOnScroll = () => {
+        revealElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 80) {
+                el.classList.add('visible');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+</script>
+
+</body>
+</html>
+
+
 
