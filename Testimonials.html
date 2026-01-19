@@ -335,8 +335,22 @@
 
   box-shadow: 0 6px 14px rgba(245, 158, 11, 0.35);
 }
+          .cta-button:hover {
+  background-color: #d97706; /* slightly darker orange */
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(245, 158, 11, 0.45);
+}
 
-    
+.cta-button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 12px rgba(245, 158, 11, 0.35);
+}
+
+    .cta-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.4);
+}
+
             /* Scroll animation */
         .reveal {
             opacity: 0;
