@@ -143,7 +143,6 @@
             padding: 0.5rem;
         }
 
-                /* 🟡 CHANGE: NEW - Hero Section (moved from header) */
         .hero {
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
             padding: 5rem 2rem;
@@ -187,12 +186,29 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            /* 🟡 CHANGE: Increased gap from 2rem to 4rem */
             gap: 4rem;
             max-width: 1200px;
             margin: 0 auto;
-        }
+           }
 
+    @media (max-width: 768px) {
+
+  .hero-wrapper {
+            flex-direction: column;  
+            text-align: center;
+            gap: 2rem;
+          }
+
+          .hero-image-container {
+            max-width: 90%;           
+              }
+
+          .hero-image {
+            width: 100%;
+            height: auto;
+              }
+            }
+        
        .hero-text {
             flex: 1;
         }
