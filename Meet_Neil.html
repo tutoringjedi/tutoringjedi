@@ -493,7 +493,6 @@
             color: #f59e0b;
         }
 
-        
         .cta-button {
             display: inline-block;
             background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
@@ -536,17 +535,16 @@
         margin: 0.5rem 0;
         }
 
-/* Mobile */
+        /* Mobile */
          @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
             }
 
-            .tagline {
-  font-size: 1.15rem;
-  opacity: 0.9;
-}
-
+        .tagline {
+              font-size: 1.15rem;
+              opacity: 0.9;
+            }
 
             nav ul {
                 display: none;
@@ -586,6 +584,7 @@
 
 <body>
 
+<!-- ── Header ───────────────────────────────────────────────── -->
 <header role="banner">
     <div class="header-content">
         <img src="logo.png" alt="Tutoring Jedi Logo" loading="eager">
@@ -596,7 +595,10 @@
     </div>
 </header>
 
+<!-- ── Nav ──────────────────────────────────────────────────── -->
 <nav aria-label="Primary navigation">
+     <div class="nav-container">
+       <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
     <ul>
     <li><a href="/">About</a></li>
     <li><a href="/Philosophy.html">Philosophy</a></li>
@@ -606,6 +608,9 @@
     </ul>
 </nav>
 
+    <main id="main-content">
+
+    <!-- ── Hero Banner ──────────────────────────────────────── -->
     <section class="hero-section">
      <div class="hero-overlay bottom">
     <h1>Personalized Math and Science tutoring and university admission counselling</h1>
@@ -654,7 +659,55 @@
         </div>
 </section>
 
-    
+    <h3 style="margin-top: 2rem;">Academic &amp; Professional Background</h3>
+
+                    <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <p>
+                            <strong>Adjunct Professor — Seneca Polytechnic</strong>
+                            Teaching Business Analytics, Research Methods, and related courses
+                            to undergraduate and post-graduate students.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <p>
+                            <strong>Institutional Research Analyst — University of Toronto</strong>
+                            Leading data analytics and planning at Canada's top-ranked university.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <p>
+                            <strong>20+ Years in Research &amp; Analytics</strong>
+                            Spanning the US and Canada across research, project management, and
+                            data analytics roles.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <p>
+                            <strong>Education</strong>
+                            Double Masters (University of Utah) · M.Sc. & B.Sc. Physics ·
+                            PMP Certified · SAS Certified
+                        </p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 2rem;">Beyond the Classroom</h3>
+                <p>
+                    Neil serves on the Board of Directors of multiple Canadian non-profits and is an
+                    active marathon runner, swimmer, and hiker. His belief that discipline and
+                    consistency in personal goals translates directly to academic achievement shapes
+                    everything about the way he teaches.
+                </p>
+
+            </article>
+        </div>
+    </section>
+
+ <!-- ── Contact  ────────────────────────────────────── -->        
 <section id="contact_new">
     <div class="contact-center">
         <h2>Contact Us</h2>
