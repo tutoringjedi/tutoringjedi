@@ -76,7 +76,6 @@
     height: 70px;
     width: auto;
     flex-shrink: 0;
-    mix-blend-mode: multiply;
 }
 
     .header-text p {
@@ -133,11 +132,13 @@
         .menu-toggle {
             display: none;
             background: none;
-            border: none;
+            border: 2px solid rgba(255,255,255,0.5);
             color: white;
             font-size: 1.5rem;
             cursor: pointer;
             padding: 0.5rem;
+            border-radius: 6px;
+            transition: background 0.2s;
         }
 
                 /* 🟡 CHANGE: NEW - Hero Section (moved from header) */
@@ -202,6 +203,33 @@
             border-radius: 20px;
             /* 🟡 CHANGE: Enhanced shadow */
             box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        }
+
+        .stats-bar {
+            background: #1e3c72;
+            padding: 2.5rem 2rem;
+        }
+
+        .stats-bar .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-item span {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #f59e0b;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .stat-item p {
+            margin: 0;
+            color: #ffffff;
+            font-size: 0.95rem;
         }
 
         /* Layout */
@@ -380,7 +408,14 @@
 
         .contact-item strong {
             color: #f59e0b;
-        }
+               } 
+        
+        #calendly h2 { margin-bottom: 0.5rem; }
+
+        #calendly .calendly-subtitle {
+            color: #475569;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
 
         /* Scroll animation */
         .reveal {
@@ -402,28 +437,54 @@
        padding: 2rem 1rem;
         }
 
-        footer p {
-        margin: 0.5rem 0;
+        footer p {margin: 0.5rem 0;
         }
-
+        /* Mobile */
          @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
             }
 
-            .tagline {
-  font-size: 1.15rem;
-  opacity: 0.9;
-}
+             nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #2a5298;
+                padding: 0.5rem 0;
+            }
 
+            nav ul.open {
+                display: flex;
+            }
 
-        /* Mobile */
-        @media (max-width: 768px) {
+            .hero-wrapper {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .hero-text h2 {
+                font-size: 2rem;
+            }
+
+            .hero-image-container {
+                max-width: 100%;
+            }
+
             .tutor-card-header {
                 flex-direction: column;
                 text-align: center;
             }
-        }
+
+            .stats-bar .container {
+                gap: 2rem;
+            }
+            .tagline {
+              font-size: 1.15rem;
+              opacity: 0.9;
+            }
+
+
+ 
     </style>
 </head>
 
@@ -439,17 +500,13 @@
     </div>
 </header>
 
-<!--  <img src="hero.webp"
-       alt="Student studying with tutor"
-       class="hero-image"
-       loading="eager">
-    -->
-</div>
-
-</header>
-
+    <!-- ============================================================
+     NAV
+     ============================================================ -->
+    
 <nav aria-label="Primary navigation">
     <div class="nav-container">
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
     <ul>
     <li><a href="/">About</a></li>
     <li><a href="/Philosophy.html">Philosophy</a></li>
@@ -462,19 +519,45 @@
 
 <main id="main-content">
 
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
     <section class="hero">
     <div class="hero-wrapper">
         <div class="hero-text">
             <h2>Master Your Learning Journey</h2>
-            <p>Personalized tutoring in Math, Science, and test prep that unlocks your full potential and builds lasting confidence.</p>
-             <a href="mailto:tutoringjedi@gmail.com" class="cta-button" style="margin-top: 2rem;">Schedule Your Free Consultation</a>
+            <p>Personalized tutoring in high school math and sciences, and test prep (SAT, ACT, GRE & GMAT)  plus university-level Statistics, Research Methods, and Machine Learning. Taught by a college instructor with 15+ years of experience.</p>
+             <a href="/Contact.html" class="cta-button" style="margin-top: 2rem;">Schedule Your Free Consultation</a>
         </div>
         <div class="hero-image-container">
-            <img src="teaching.png" alt="Neil teaching high school students" class="hero-image" loading="eager">
+            <img src="teaching.png" alt="Neil teaching high school students" class="hero-image"  width="500" height="400" loading="eager">
         </div>
     </div>
 </section>
 
+    <!-- ============================================================
+         STATS BAR
+         ============================================================ -->
+<div class="stats-bar">
+        <div class="container">
+            <div class="stat-item">
+                <span>500+</span>
+                <p>Students Helped</p>
+            </div>
+            <div class="stat-item">
+                <span>15+</span>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+                <span>4</span>
+                <p>Tests Covered</p>
+            </div>
+            <div class="stat-item">
+                <span>95%</span>
+                <p>Score Improvement Rate</p>
+            </div>
+        </div>
+    </div>
     
 <section id="about">
     <div class="container">
@@ -485,7 +568,7 @@
                 Like the legendary Jedi, we understand that true mastery comes from dedication, personalized guidance, and the right mentorship.
             </p> 
            <p>Tutoring Jedi specializes in standardized test prep (SAT, ACT, GRE, GMAT) and university-level courses in Statistics, Research Methods, and Machine Learning — 
-            taught by Neil Chakraborty, a college instructor and an Expert Tutor with 15+ years of experience.
+            taught by Neil Chakraborty, a college instructor and an expert tutor with 15+ years of experience.
            </p>
             <p>
                 At Tutoring Jedi, we don't just teach subjects – we empower students to develop critical thinking skills, build confidence, and discover their unique learning styles. 
