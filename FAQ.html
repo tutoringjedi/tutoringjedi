@@ -39,24 +39,28 @@
         p { margin-bottom: 1.25rem; }
 
         /* ── Header ── */
+             /* Header */
         header {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: #ffffff;
             padding: 1.5rem 2rem;
             display: flex;
+            justify-content: center;
             align-items: center;
             gap: 1rem;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
+           .header-content {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
-            width: 100%;
+             flex-direction: row;
+            justify-content: center;  
+            gap: 0.5rem;
+            width: 100%;  
         }
+
+
 
         header img {
             height: 70px;
@@ -376,6 +380,147 @@
 
             .hero-section h1 { font-size: 1.75rem; }
             .hero-section { height: auto; padding: 3rem 1.5rem; }
+        .logo-white {
+    color: #ffffff;
+    }
+
+.logo-gold {
+    color: #f59e0b;
+    text-shadow: 0 0 16px rgba(245,158,11,0.4);
+    }
+
+  .logo-ca {
+    color: #fcd34d;
+    font-size: 1.4rem;
+    font-weight: 600;
+    vertical-align: baseline;
+    }  
+
+    /* Pen icon */
+.pen-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     width: 28px;
+    flex-shrink: 0;
+}
+
+.pen-wrap::before {
+    content: '✦';
+      top: -6px;
+    right: -10px;
+    font-size: 11px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.pen-swoosh {
+    position: absolute;
+    left: -8px;
+    top: 4px;
+    width: 14px;
+    height: 56px;
+    border-left: 2px solid rgba(245,158,11,0.35);
+    border-radius: 50% 0 0 50%;
+}
+
+    .pen-blade {
+    width: 8px;
+    height: 52px;
+    background: linear-gradient(180deg,
+        #fde68a 0%, #f59e0b 25%, #d97706 60%, #b45309 100%);
+    border-radius: 5px 5px 1px 1px;
+    box-shadow:
+        inset -2px 0 4px rgba(0,0,0,0.15),
+        inset 2px 0 3px rgba(255,255,255,0.2),
+        0 0 12px rgba(245,158,11,0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.pen-blade::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    width: 3px;
+    height: 50px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.4), transparent);
+    border-radius: 2px;
+}
+
+.pen-guard {
+    width: 14px;
+    height: 5px;
+    background: linear-gradient(180deg, #e2e8f0, #94a3b8);
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.pen-hilt {
+    width: 10px;
+    height: 13px;
+    background: linear-gradient(180deg, #94a3b8, #64748b, #475569);
+    border-radius: 1px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3px 0;
+}
+
+    .pen-hilt::before, .pen-hilt::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background: rgba(255,255,255,0.25);
+    border-radius: 1px;
+}
+
+.pen-collar {
+    width: 12px;
+    height: 4px;
+    background: linear-gradient(180deg, #94a3b8, #64748b);
+    border-radius: 1px;
+    position: relative;
+    z-index: 2;
+}
+
+.pen-nib {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 12px solid #d97706;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 2px 3px rgba(180,83,9,0.4));
+}
+    
+   .pen-nib::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -1px;
+    width: 2px;
+    height: 11px;
+    background: rgba(30,60,114,0.5);
+    border-radius: 1px;
+}
+    
+  /* Divider line between name and tagline */
+.logo-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, rgba(245,158,11,0.8), transparent);
+    margin: 3px 0 5px 0;
+    }
+
         }
     </style>
 </head>
@@ -383,14 +528,27 @@
 <body>
 
 <!-- ── Header ── -->
-<header role="banner">
+    <header role="banner">
     <div class="header-content">
-        <img src="logo.png" alt="Tutoring Jedi Logo" loading="eager">
-        <div class="header-text">
-            <h1>Tutoring Jedi</h1>
-            <p>May the Wisdom be with You</p>
-        </div>
+  <div class="pen-wrap">
+    <div class="pen-swoosh"></div>
+    <div class="pen-blade"></div>
+    <div class="pen-guard"></div>
+    <div class="pen-hilt"></div>
+    <div class="pen-collar"></div>
+    <div class="pen-nib"></div>
+</div>
+      
+<div class="header-text">
+    <h1>
+        <span class="logo-white">Tutoring</span>
+        <span class="logo-gold">Jedi</span>
+        <span class="logo-ca">.ca</span>
+    </h1>
+    <div class="logo-divider"></div>
+    <p>Let the Wisdom be with You</p>
     </div>
+</div> 
 </header>
 
 <!-- ── Nav ── -->
