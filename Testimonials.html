@@ -436,6 +436,7 @@
 .pen-wrap {
     display: flex;
     flex-direction: column;
+   position: relative;
     align-items: center;
      width: 28px;
     flex-shrink: 0;
@@ -443,7 +444,7 @@
 
 .pen-wrap::before {
     content: '✦';
-    position: absolute;
+     position: relative;
     top: -6px;
     right: -10px;
     font-size: 11px;
