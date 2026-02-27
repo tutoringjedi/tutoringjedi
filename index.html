@@ -416,7 +416,8 @@
             color: #475569;
             font-size: 1.1rem;
             margin-bottom: 2rem;
-
+        }
+        
         /* Scroll animation */
         .reveal {
             opacity: 0;
@@ -439,51 +440,41 @@
 
         footer p {margin: 0.5rem 0;
         }
+            
         /* Mobile */
          @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
+        .menu-toggle { display: block; }
 
-             nav ul {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                background-color: #2a5298;
-                padding: 0.5rem 0;
-            }
+        nav { position: relative; }
 
-            nav ul.open {
-                display: flex;
-            }
+        nav ul {
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        background-color: #1e3c72;
+        position: absolute;
+        top: 56px;
+        right: 0;
+        left: auto;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+        z-index: 999;
+        overflow: hidden;
+        }
 
-            .hero-wrapper {
-                flex-direction: column;
-                gap: 2rem;
-            }
+        nav ul.open { display: flex; }
 
-            .hero-text h2 {
-                font-size: 2rem;
-            }
+        nav ul li { width: 100%; }
 
-            .hero-image-container {
-                max-width: 100%;
-            }
+        nav ul li a {
+        padding: 0.85rem 1.5rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        font-size: 0.95rem;
+        }
 
-            .tutor-card-header {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .stats-bar .container {
-                gap: 2rem;
-            }
-            .tagline {
-              font-size: 1.15rem;
-              opacity: 0.9;
-            }
-
-
+        nav ul li:last-child a { border-bottom: none; }
+        
+         }
  
     </style>
 </head>
@@ -657,16 +648,19 @@
     const navUl = document.querySelector('nav ul');
 
     menuToggle.addEventListener('click', () => {
-        const isOpen = navUl.classList.toggle('open');
-        menuToggle.setAttribute('aria-expanded', isOpen);
+    const isOpen = navUl.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.innerHTML = isOpen ? '&#10005;' : '&#9776;';
     });
 
-     navUl.querySelectorAll('a').forEach(link => {
+    navUl.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
-            navUl.classList.remove('open');
-            menuToggle.setAttribute('aria-expanded', false);
-        });
+        navUl.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.innerHTML = '&#9776;';
     });
+    });;
+    
 </script>
 </script>
 
