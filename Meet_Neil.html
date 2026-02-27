@@ -537,30 +537,42 @@
 
         /* Mobile */
          @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-
-        .tagline {
+            .menu-toggle {display: block;
+         
+            .tagline {
               font-size: 1.15rem;
               opacity: 0.9;
             }
 
+             nav {
+            position: relative;   /* gives the dropdown an anchor point */
+                }
+     
             nav ul {
                 display: none;
                 flex-direction: column;
                 width: 100%;
                 background-color: #2a5298;
                 padding: 0.5rem 0;
+                position: absolute;  
+                top: 56px;           
+                left: 0;
+                z-index: 999;
             }
 
             nav ul.open { display: flex; }
-
+  
+             nav ul li a {
+                padding: 0.9rem 1.5rem;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+                width: 100%;
+            }
             .hero-overlay h1 { font-size: 1.3rem; }
 
             .tutor-card-header {
                 flex-direction: column;
                 text-align: center;
+            }
             }
 
             .tag-row { justify-content: center; }
@@ -606,6 +618,7 @@
     <li><a href="/Testimonials.html">Testimonials</a></li>
     <li><a href="/Contact.html">Contact</a></li>
     </ul>
+</div>
 </nav>
 
     <main id="main-content">
@@ -790,6 +803,23 @@
 
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll();
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+        const isOpen = navUl.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+        menuToggle.innerHTML = isOpen ? '&#10005;' : '&#9776;'; /* ☰ / ✕ */
+    });
+
+    /* Close menu when a link is tapped */
+    navUl.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navUl.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.innerHTML = '&#9776;';
+        });
+    });
 </script>
 
 </body>
