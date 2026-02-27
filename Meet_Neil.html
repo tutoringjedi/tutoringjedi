@@ -94,6 +94,7 @@
             width: 100%;
             height: 80px;
             align-items: center;
+            position: relative;  
         }
 
          .nav-container {
@@ -198,25 +199,7 @@
             margin: 0 auto;
            }
 
-    @media (max-width: 768px) {
-
-  .hero-wrapper {
-            flex-direction: column;  
-            text-align: center;
-            gap: 2rem;
-          }
-
-          .hero-image-container {
-            max-width: 90%;           
-              }
-
-          .hero-image {
-            width: 100%;
-            height: auto;
-              }
-            }
-        
-       .hero-text {
+        .hero-text {
             flex: 1;
         }
 
@@ -551,28 +534,38 @@
             nav ul {
                 display: none;
                 flex-direction: column;
-                width: 100%;
-                background-color: #2a5298;
-                padding: 0.5rem 0;
-                position: absolute;  
-                top: 56px;           
-                left: 0;
+                width: 200px;                          /* ← fixed width dropdown, not full screen */
+                background-color: #1e3c72;
+                position: absolute;
+                top: 56px;
+                right: 0;                              /* ← anchors to RIGHT side under the ☰ button */
+                left: auto;                            /* ← overrides any left:0 you may have */
+                border-radius: 0 0 10px 10px;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.25);
                 z-index: 999;
-            }
+                overflow: hidden;
+                }
 
             nav ul.open { display: flex; }
   
-             nav ul li a {
-                padding: 0.9rem 1.5rem;
-                border-bottom: 1px solid rgba(255,255,255,0.1);
-                width: 100%;
-            }
-            .hero-overlay h1 { font-size: 1.3rem; }
+            nav ul li { width: 100%; }
 
-            .tutor-card-header {
-                flex-direction: column;
-                text-align: center;
+            nav ul li a {
+                padding: 0.85rem 1.5rem;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+                font-size: 0.95rem;
             }
+
+            nav ul li a:hover {
+                background-color: rgba(255,255,255,0.15);
+                padding-left: 1.75rem;        /* ← subtle indent on hover feels polished */
+                transition: padding 0.2s ease, background 0.2s ease;
+            }
+   
+             nav ul li:last-child a {
+                border-bottom: none;                  
+            }
+
             }
 
             .tag-row { justify-content: center; }
