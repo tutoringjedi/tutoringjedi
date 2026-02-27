@@ -521,71 +521,7 @@
         margin: 0.5rem 0;
         }
 
-        /* Mobile */
-         @media (max-width: 768px) {
-            .menu-toggle {display: block;}
-         
-            .tagline {
-              font-size: 1.15rem;
-              opacity: 0.9;
-            }
-
-             nav {
-            position: relative;   /* gives the dropdown an anchor point */
-                }
-     
-            nav ul {
-                display: none;
-                flex-direction: column;
-                width: 200px;                          /* ← fixed width dropdown, not full screen */
-                background-color: #1e3c72;
-                position: absolute;
-                top: 64px;
-                right: 0;                              /* ← anchors to RIGHT side under the ☰ button */
-                left: auto;                            /* ← overrides any left:0 you may have */
-                border-radius: 0 0 10px 10px;
-                box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-                z-index: 999;
-                overflow: hidden;
-                }
-
-            nav ul.open { display: flex; }
-  
-            nav ul li { width: 100%; }
-
-            nav ul li a {
-                padding: 0.85rem 1.5rem;
-                border-bottom: 1px solid rgba(255,255,255,0.1);
-                font-size: 0.95rem;
-            }
-
-            nav ul li a:hover {
-                background-color: rgba(255,255,255,0.15);
-                padding-left: 1.75rem;        /* ← subtle indent on hover feels polished */
-                transition: padding 0.2s ease, background 0.2s ease;
-            }
-   
-             nav ul li:last-child a {
-                border-bottom: none;                  
-            }
-
-           .tag-row { justify-content: center; }
-
-            .stat-highlights { grid-template-columns: repeat(2, 1fr); }
-
-            .hero-wrapper {
-                flex-direction: column;
-                text-align: center;
-                gap: 2rem;
-            }
-
-            .hero-image-container { max-width: 90%; }
-            .hero-image { width: 100%; height: auto; }
-            .tagline { font-size: 1.15rem; opacity: 0.9; }
-      
-
-
-  .logo-white {
+          .logo-white {
     color: #ffffff;
     }
 
@@ -725,6 +661,72 @@
     background: linear-gradient(to right, rgba(245,158,11,0.8), transparent);
     margin: 3px 0 5px 0;
 }
+        
+        /* Mobile */
+         @media (max-width: 768px) {
+            .menu-toggle {display: block;}
+         
+            .tagline {
+              font-size: 1.15rem;
+              opacity: 0.9;
+            }
+
+             nav {
+            position: relative;   /* gives the dropdown an anchor point */
+                }
+     
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 200px;                          /* ← fixed width dropdown, not full screen */
+                background-color: #1e3c72;
+                position: absolute;
+                top: 64px;
+                right: 0;                              /* ← anchors to RIGHT side under the ☰ button */
+                left: auto;                            /* ← overrides any left:0 you may have */
+                border-radius: 0 0 10px 10px;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+                z-index: 999;
+                overflow: hidden;
+                }
+
+            nav ul.open { display: flex; }
+  
+            nav ul li { width: 100%; }
+
+            nav ul li a {
+                padding: 0.85rem 1.5rem;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+                font-size: 0.95rem;
+            }
+
+            nav ul li a:hover {
+                background-color: rgba(255,255,255,0.15);
+                padding-left: 1.75rem;        /* ← subtle indent on hover feels polished */
+                transition: padding 0.2s ease, background 0.2s ease;
+            }
+   
+             nav ul li:last-child a {
+                border-bottom: none;                  
+            }
+
+           .tag-row { justify-content: center; }
+
+            .stat-highlights { grid-template-columns: repeat(2, 1fr); }
+
+            .hero-wrapper {
+                flex-direction: column;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .hero-image-container { max-width: 90%; }
+            .hero-image { width: 100%; height: auto; }
+            .tagline { font-size: 1.15rem; opacity: 0.9; }
+      
+
+
+
 }
 
     </style>
