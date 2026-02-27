@@ -414,25 +414,48 @@
         margin: 0.5rem 0;
         }
 
-         @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-
-            .tagline {
-  font-size: 1.15rem;
-  opacity: 0.9;
-}
 
 
         /* Mobile */
-        @media (max-width: 768px) {
-            .tutor-card-header {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
+
+      @media (max-width: 768px) {
+    .menu-toggle { display: block; }
+
+    nav { position: relative; }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        background-color: #1e3c72;
+        position: absolute;
+        top: 56px;
+        right: 0;
+        left: auto;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+        z-index: 999;
+        overflow: hidden;
+    }
+
+    nav ul.open { display: flex; }
+
+    nav ul li { width: 100%; }
+
+    nav ul li a {
+        padding: 0.85rem 1.5rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        font-size: 0.95rem;
+    }
+
+    nav ul li:last-child a { border-bottom: none; }
+
+    .tutor-card-header { flex-direction: column; text-align: center; }
+    .tagline { font-size: 1.15rem; opacity: 0.9; }
+}
+
+
+</style>
 </head>
 
 <body>
@@ -457,17 +480,19 @@
 </header>
 
 <nav aria-label="Primary navigation">
-  <ul>
+     <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+<ul>
     <li><a href="./">About</a></li>
     <li><a href="Philosophy.html">Philosophy</a></li>
     <li><a href="Meet_Neil.html">Meet Neil</a></li>
     <li><a href="Testimonials.html">Testimonials</a></li>
     <li><a href="Contact.html">Contact</a></li>
   </ul>
+</div>    
 </nav>
 
 
-        </section> <section id="vision-mission"> 
+     <section id="vision-mission"> 
             <div class="container"> 
             <h2>Vision & Mission</h2> <div class="vision-mission"> 
                 <div class="vm-card reveal"> 
@@ -490,10 +515,9 @@
 </section>
 <section id="philosophy-tutor">
     <div class="container">
-        <h2>Teaching Philosophy</h2>
+        <h3>Teaching Philosophy</h3>
             <article class="vm-card reveal" id="philosophy">
-                <h2Teaching Philosophy</h2>
-                <p>Neil brings years of dedicated experience in personalized education, with a passion for helping students unlock their full potential. His teaching philosophy centers on understanding each student as an individual, identifying their unique strengths and challenges, and crafting customized learning strategies that make complex concepts accessible and engaging.</p> 
+               <p>Neil brings years of dedicated experience in personalized education, with a passion for helping students unlock their full potential. His teaching philosophy centers on understanding each student as an individual, identifying their unique strengths and challenges, and crafting customized learning strategies that make complex concepts accessible and engaging.</p> 
                 <p>With expertise across multiple subjects and grade levels, Neil has helped countless students not only improve their grades but also develop the critical thinking skills and confidence needed for long-term academic success. His patient, supportive approach creates a comfortable learning environment where students feel encouraged to ask questions, make mistakes, and grow.</p> 
                 <p> Neil believes that every student can excel when given the right tools, techniques, and encouragement. His commitment to excellence and genuine investment in each student's journey has made him a trusted mentor for families throughout the community </p>
                 <p> The focus is on conceptual clarity, critical thinking, and confidence-building for long-term success. </p>
@@ -543,6 +567,23 @@
 
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll();
+const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+        const isOpen = navUl.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+        menuToggle.innerHTML = isOpen ? '&#10005;' : '&#9776;';
+    });
+
+    navUl.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navUl.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.innerHTML = '&#9776;';
+        });
+    });
+    
 </script>
 
 </body>
