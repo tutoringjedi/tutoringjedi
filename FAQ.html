@@ -346,45 +346,7 @@
 
         footer p { margin: 0.5rem 0; }
 
-        /* ── Mobile ── */
-        @media (max-width: 768px) {
-            .menu-toggle { display: block; }
-
-            nav { position: relative; }
-
-            nav ul {
-                display: none;
-                flex-direction: column;
-                width: 200px;
-                background-color: #1e3c72;
-                position: absolute;
-                top: 100%;
-                right: 0;
-                left: auto;
-                border-radius: 0 0 10px 10px;
-                box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-                z-index: 999;
-                overflow: hidden;
-            }
-
-            nav ul.open { display: flex; }
-            nav ul li { width: 100%; }
-
-            nav ul li a {
-                padding: 0.85rem 1.5rem;
-                border-bottom: 1px solid rgba(255,255,255,0.1);
-                font-size: 0.95rem;
-            }
-
-            nav ul li:last-child a { border-bottom: none; }
-
-            .hero-section h1 { font-size: 1.75rem; }
-            .hero-section { height: auto; padding: 3rem 1.5rem; }
-        .logo-white {
-    color: #ffffff;
-    }
-
-.logo-gold {
+        .logo-gold {
     color: #f59e0b;
     text-shadow: 0 0 16px rgba(245,158,11,0.4);
     }
@@ -520,6 +482,45 @@
     background: linear-gradient(to right, rgba(245,158,11,0.8), transparent);
     margin: 3px 0 5px 0;
     }
+
+        /* ── Mobile ── */
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+
+            nav { position: relative; }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 200px;
+                background-color: #1e3c72;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: auto;
+                border-radius: 0 0 10px 10px;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+                z-index: 999;
+                overflow: hidden;
+            }
+
+            nav ul.open { display: flex; }
+            nav ul li { width: 100%; }
+
+            nav ul li a {
+                padding: 0.85rem 1.5rem;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+                font-size: 0.95rem;
+            }
+
+            nav ul li:last-child a { border-bottom: none; }
+
+            .hero-section h1 { font-size: 1.75rem; }
+            .hero-section { height: auto; padding: 3rem 1.5rem; }
+        .logo-white {
+    color: #ffffff;
+    }
+
 
         }
     </style>
