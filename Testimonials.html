@@ -69,12 +69,7 @@
 
         
 /* Logo sizing */
-    header img {
-    height: 70px;
-    width: auto;
-    flex-shrink: 0;
-    mix-blend-mode: multiply;
-}
+
 
     .header-text p {
     margin: 0.25rem 0 0 0;
@@ -418,6 +413,22 @@
 
     nav ul li:last-child a { border-bottom: none; }
     }
+
+  .logo-white {
+    color: #ffffff;
+    }
+
+.logo-gold {
+    color: #f59e0b;
+    text-shadow: 0 0 16px rgba(245,158,11,0.4);
+    }
+
+  .logo-ca {
+    color: #fcd34d;
+    font-size: 1.4rem;
+    font-weight: 600;
+    vertical-align: baseline;
+    }  
  </style>
 
 </head>
@@ -426,12 +437,13 @@
 
     <header role="banner">
     <div class="header-content">
-        <img src="logo.png" alt="Tutoring Jedi Logo" loading="eager">
-        <div class="header-text">
-            <h1>Tutoring Jedi</h1>
-            <p>May the Wisdom be with You</p>
-        </div>
+    <div class="header-text">
+        <h1>
+            <span class="logo-white">Tutoring</span><span class="logo-gold">Jedi</span><span class="logo-ca">.ca</span>
+        </h1>
+        <p>Let the Wisdom be with You</p>
     </div>
+</div>
 </header>
 
 </div>
