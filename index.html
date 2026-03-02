@@ -650,7 +650,17 @@ header {
         }
 
         nav ul li:last-child a { border-bottom: none; }
+
+        .submenu {
+        position: static;
+        width: 100%;
+        }
         
+        .has-submenu.open .submenu {
+         display: flex;
+         flex-direction: column;
+        }
+             
          }
  
     </style>
