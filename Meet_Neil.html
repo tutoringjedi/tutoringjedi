@@ -1061,17 +1061,19 @@ document.querySelectorAll('.has-submenu > a').forEach(link => {
             const parent = this.closest('.has-submenu');
             const isOpen = parent.classList.contains('open');
 
-            /* Close all other open submenus first */
-            document.querySelectorAll('.has-submenu.open').forEach(el => {
-                el.classList.remove('open');
-            });
-
             if (!isOpen) {
-                /* First tap — just open submenu, block navigation */
+                /* First tap — open submenu only, block navigation */
                 e.preventDefault();
+                e.stopPropagation();
+                /* Close any other open submenus */
+                document.querySelectorAll('.has-submenu.open').forEach(el => {
+                    el.classList.remove('open');
+                });
                 parent.classList.add('open');
+            } else {
+                /* Second tap — navigate immediately, don't toggle */
+                window.location.href = this.getAttribute('href');
             }
-            /* If already open — do nothing, let the browser navigate normally */
         }
     });
 });
