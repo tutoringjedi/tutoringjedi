@@ -621,6 +621,11 @@ header {
         .submenu-toggle::after {
         content: " ▼";
         font-size: 0.7rem;
+        display: inline-block;
+        transition: transform 0.2s ease;
+        }
+        .has-submenu.open .submenu-toggle::after {
+        transform: rotate(180deg);
         }
         
         /* Mobile */
@@ -706,12 +711,14 @@ header {
     <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
     <ul>
     <li><a href="/">About</a></li>
-     <li><a href="/Meet_Neil.html">Meet Neil</a></li>
-    <ul class="submenu">
-    <li><a href="/Philosophy.html">Philosophy</a></li>
-    </ul>
+    <li class="has-submenu">
+        <a href="/Meet_Neil.html" class="submenu-toggle">Meet Neil</a>
+        <ul class="submenu">
+            <li><a href="/Philosophy.html">Philosophy</a></li>
+        </ul>
+    </li>
     <li><a href="/Testimonials.html">Testimonials</a></li>
-    <li><a href="/FAQ.html">FAQ</a></li>        
+    <li><a href="/FAQ.html">FAQ</a></li>
     <li><a href="/Contact.html">Contact</a></li>
     </ul>
    </div>   
@@ -870,6 +877,14 @@ header {
     });
     });;
     
+    document.querySelectorAll('.has-submenu > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();   /* ← stops nav on mobile, shows submenu instead */
+            this.closest('.has-submenu').classList.toggle('open');
+        }
+    });
+});
 </script>
 </script>
 
