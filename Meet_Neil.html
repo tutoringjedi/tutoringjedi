@@ -1055,14 +1055,19 @@
         });
     });
 
-    document.querySelectorAll('.has-submenu > a').forEach(link => {
+  document.querySelectorAll('.has-submenu > a').forEach(link => {
     link.addEventListener('click', function(e) {
         if (window.innerWidth <= 768) {
-            e.preventDefault();
-            this.closest('.has-submenu').classList.toggle('open');
-        }
+            const parent = this.closest('.has-submenu');
+            if (!parent.classList.contains('open')) {
+                /* First tap — open the submenu, stay on page */
+                e.preventDefault();
+                parent.classList.add('open');
+            }
+            }
     });
 });
+    
 </script>
 
 </body>
