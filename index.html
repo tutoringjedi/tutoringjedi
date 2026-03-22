@@ -2,6 +2,16 @@
 <html lang="en">
 <head>
     <link rel="canonical" href="https://tutoringjedi.ca/" />
+    <script>
+    if (window.location.hostname === "www.tutoringjedi.ca") {
+        window.location.replace(
+            "https://tutoringjedi.ca" +
+            window.location.pathname +
+            window.location.search +
+            window.location.hash
+        );
+    }
+    </script>
     <!-- Basic Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +29,7 @@
       "@type": "LocalBusiness",
       "name": "Tutoring Jedi",
       "description": "Expert SAT, ACT, GRE and GMAT tutoring and university admissions counselling in Toronto.",
-      "url": "https://tuoringjedi.ca",
+      "url": "https://tutoringjedi.ca",
       "telephone": "your-phone-number",
       "address": {
         "@type": "PostalAddress",
