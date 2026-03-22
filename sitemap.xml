@@ -1,8 +1,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://tutoringjedi.ca/</loc></url>
+    <url><loc>https://tutoringjedi.ca/Meet_Neil.html</loc></url>
   <url><loc>https://tutoringjedi.ca/Philosophy.html</loc></url>
-  <url><loc>https://tutoringjedi.ca/Meet_Neil.html</loc></url>
   <url><loc>https://tutoringjedi.ca/Testimonials.html</loc></url>
   <url><loc>https://tutoringjedi.ca/FAQ.html</loc></url>
+  <url><loc> https://tutoringjedi.ca/Resources.html</loc></url>
+   <url><loc> https://tutoringjedi.ca/Resources_US.html</loc></url>
+   <url><loc> https://tutoringjedi.ca/Resources_Canada.html</loc></url>
+   <url><loc> https://tutoringjedi.ca/Resources_UK_Europe.html</loc></url>
+   <url><loc>https://tutoringjedi.ca/Resources_AUS_NZ.html</loc></url>  
+  <url><loc> https://tutoringjedi.ca/Resources_Global.html</loc></url>
   <url><loc>https://tutoringjedi.ca/Contact.html</loc></url>
+  
 </urlset>
