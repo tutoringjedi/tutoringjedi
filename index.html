@@ -180,6 +180,51 @@ header {
             transition: background 0.2s;
         }
 
+        
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.about-tile {
+    background: #ffffff;
+    padding: 2rem;
+}
+
+.about-tile-alt {
+    background: #f8fafc;
+}
+
+.about-tile-pill {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    background: #1e3c72;
+    color: #fcd34d;
+    padding: 3px 12px;
+    border-radius: 50px;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.03em;
+}
+
+.about-tile h3 {
+    color: #1e3c72;
+    font-size: 1.15rem;
+    margin: 0 0 0.6rem;
+}
+
+.about-tile p {
+    color: #475569;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+        
                 /* 🟡 CHANGE: NEW - Hero Section (moved from header) */
         .hero {
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
@@ -711,7 +756,10 @@ header {
          display: flex;
          flex-direction: column;
         }
-             
+        .about-grid {
+        grid-template-columns: 1fr;  /* ← stacks to single column on mobile */
+    }
+   
          }
  
     </style>
@@ -832,24 +880,46 @@ header {
 <section id="about">
     <div class="container">
         <h2>About Tutoring Jedi</h2>
-        <div class="about-content reveal"> 
-            <p>
-                Welcome to Tutoring Jedi, where we believe every student has the potential to become a master of their own learning journey. 
-                Like the legendary Jedi, we understand that true mastery comes from dedication, personalized guidance, and the right mentorship.
-            </p> 
-           <p> Based in Toronto, Ontario, Canada, Tutoring Jedi specializes in standardized test prep (SAT, ACT, GRE, GMAT), university entrance counselling, high school Math and Science and university-level courses in Statistics and Math — 
-            taught by Neil Chakraborty, an expert tutor with 15+ years of experience teaching students across the world. Serving students across the Greater Toronto Area and online worldwide
-           </p>
-            <p>
-                At Tutoring Jedi, we don't just teach subjects — we build the analytical thinking, exam strategy, and academic confidence that produce lasting results. Every student receives a
-                    personalized roadmap aligned to their goals, timeline, and learning style.
-            </p> 
-            <p>
-                Whether you're looking to get into top universities around the world, or need help in your high school or university level courses, Tutoring Jedi provides the expert guidance and support you need to succeed.
-                </p> 
-            </div> 
+        <p style="text-align:center; color:#475569; font-size:1.05rem; max-width:680px; margin:0 auto 2.5rem;">
+            Based in Toronto and serving students worldwide, Tutoring Jedi combines 15+ years of teaching experience with a simple belief — every student is capable of more than they think. We don't just teach subjects. We build the analytical thinking, exam strategy, and academic confidence that produce lasting results.
+        </p>
+
+        <!-- 2x2 Tile Grid -->
+        <div class="about-grid reveal">
+
+            <div class="about-tile">
+                <div class="about-tile-pill">SAT · ACT · GRE · GMAT</div>
+                <h3>Standardized Test Prep</h3>
+                <p>Targeted, gap-focused coaching that consistently delivers 100–150 point SAT gains, 5–10 point ACT improvements, and 70–100 point GRE/GMAT score increases. Every session is built around your specific weak points — no wasted time on what you already know.</p>
+            </div>
+
+            <div class="about-tile about-tile-alt">
+                <div class="about-tile-pill">Undergraduate · MBA · PhD</div>
+                <h3>University Admissions Counselling</h3>
+                <p>End-to-end support from school selection and timeline planning to essay strategy and application review. Neil's students have been admitted to Harvard, Stanford, Yale, UPenn, UChicago, Northwestern, UC Berkeley, University of Toronto, UBC, and McGill.</p>
+            </div>
+
+<div class="about-tile about-tile-alt">
+                <div class="about-tile-pill">Grades 7–12</div>
+                <h3>High School Math &amp; Physics</h3>
+                <p>Whether rebuilding fundamentals or pushing beyond grade level, every session is tailored to exactly where the student is right now — not a one-size-fits-all curriculum. Consistent results across Grade 9–12 Math and Physics, including preparation for competitive university programs.</p>
+            </div>
+
+            <div class="about-tile">
+                <div class="about-tile-pill">Statistics · Math · Analytics · ML</div>
+                <h3>University-Level Courses</h3>
+                <p>Support for demanding post-secondary quantitative courses including Statistics, Research Methods, Business Analytics, and Machine Learning — taught by an Adjunct Professor at Seneca Polytechnic.</p>
+            </div>
+
         </div>
-     </section>   
+
+        <p style="text-align:center; color:#94a3b8; font-size:0.9rem; margin-top:2rem;">
+  Whether you're looking to get into top universities around the world, or need help in your high school or university level courses, Tutoring Jedi provides the expert guidance and support you need to succeed.         
+ Toronto, Ontario, Canada &nbsp;·&nbsp; Serving students across the GTA and online worldwide
+        </p>
+    </div>
+</section>
+ 
 
 <!-- ============================================================
          CONTACT INFO
