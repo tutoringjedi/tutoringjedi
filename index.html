@@ -936,6 +936,12 @@ header {
             this.closest('.has-submenu').classList.toggle('open');
         }
     });
+        /* ADD inside your existing submenu-btn click handler */
+    document.querySelectorAll('a[href="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();   /* ← stops page jumping to top when About is tapped */
+    });
+});
 });
 </script>
 </body>
