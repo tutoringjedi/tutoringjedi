@@ -34,7 +34,19 @@
         .header-content { display:inline-flex; flex-direction:row; align-items:center; gap:.75rem; }
         .pen-wrap { display:flex; flex-direction:column; align-items:center; position:relative; width:28px; flex-shrink:0; }
         .pen-wrap::before { content:'✦'; position:absolute; top:-6px; right:-10px; font-size:11px; color:#fff; opacity:.9; }
-        .pen-swoosh { position:absolute; left:-8px; top:4px; width:14px; height:56px; border-left:2px solid rgba(245,158,11,.35); border-radius:50% 0 0 50%; }
+.pen-swoosh {
+    position: absolute;
+    left: -4px;
+    top: -22px;
+    width: 24px;
+    height: 70px;
+    border-left: 3px solid #f59e0b;
+    border-top: 3px solid #f59e0b; 
+    box-shadow: -2px 0 10px rgba(245,158,11,0.6);
+    border-radius: 70% 70% 0 0;
+    transform: rotate(-8deg);
+    }
+
         .pen-blade { width:8px; height:52px; background:linear-gradient(180deg,#fde68a 0%,#f59e0b 25%,#d97706 60%,#b45309 100%); border-radius:5px 5px 1px 1px; box-shadow:inset -2px 0 4px rgba(0,0,0,.15),inset 2px 0 3px rgba(255,255,255,.2),0 0 12px rgba(245,158,11,.3); position:relative; z-index:2; }
         .pen-blade::after { content:''; position:absolute; top:6px; left:2px; width:3px; height:40px; background:linear-gradient(180deg,rgba(255,255,255,.4),transparent); border-radius:2px; }
         .pen-guard { width:14px; height:5px; background:linear-gradient(180deg,#e2e8f0,#94a3b8); border-radius:2px; box-shadow:0 1px 3px rgba(0,0,0,.3); position:relative; z-index:2; }
