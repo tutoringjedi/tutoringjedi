@@ -474,6 +474,104 @@
         }
         
 
+        /* VM Split dark cards */
+.vm-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.vm-dark {
+    padding: 2rem;
+}
+
+.vm-dark-v {
+    background: #1e3c72;
+}
+
+.vm-dark-m {
+    background: #2a5298;
+}
+
+.vm-dark h3 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.6);
+    margin: 0 0 0.75rem;
+}
+
+.vm-dark p {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* Philosophy block */
+.phil-wrap {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+.phil-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #94a3b8;
+    margin: 0 0 0.75rem;
+}
+
+.phil-intro {
+    font-size: 1rem;
+    color: #475569;
+    line-height: 1.75;
+    margin: 0 0 1.5rem;
+}
+
+.phil-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.phil-step {
+    border-left: 3px solid #f59e0b;
+    padding-left: 1rem;
+}
+
+.phil-step strong {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e3c72;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.phil-step span {
+    font-size: 0.92rem;
+    color: #475569;
+    line-height: 1.65;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .vm-split {
+        grid-template-columns: 1fr;
+    }
+
+    .phil-steps {
+        grid-template-columns: 1fr;
+    }
+}
+            
         /* Mobile */
 
       @media (max-width: 768px) {
@@ -730,60 +828,48 @@ nav ul li:last-child a { border-bottom: none; }
    </div>   
 </nav>
 
-
-     <section id="vision-mission"> 
-            <div class="container"> 
-            <h2>Vision & Mission</h2> <div class="vision-mission"> 
-                <div class="vm-card reveal"> 
-                    <h3>Our Vision</h3>
-                    <p>
-                        Too many bright students sit in classrooms feeling lost — not because they lack ability, 
-                        but because no one has taught them <em>their</em> way yet. Our vision is simple: every student 
-                        who walks through our door leaves knowing they are capable of more than they believed. 
-                        Whether the goal is cracking the SAT, surviving calculus, or getting into a dream school, 
-                        we believe the right guidance changes everything.
-                    </p> 
-                </div> <div class="vm-card reveal"> 
-                    <h3>Our Mission</h3> 
-                    <p>
-                        Our mission is to meet students exactly where they are — no judgment, no one-size-fits-all 
-                        worksheets, no wasted sessions reviewing things they already know. Every lesson is built 
-                        around <em>you</em>: your gaps, your goals, your timeline. We combine 15+ years of teaching 
-                        experience with real exam expertise to help students not just pass, but genuinely understand 
-                        the material — because confidence built on real understanding lasts far beyond test day.
-                    </p> 
-                </div> 
-        </div> 
-</section>
-    
-
-</section>
-<section id="philosophy-tutor">
+<section id="vision-mission">
     <div class="container">
-        <h3>Teaching Philosophy</h3>
-            <article class="vm-card reveal" id="philosophy">
-                
-                  <p>Most students don't struggle because they aren't smart enough. They struggle because 
-                    somewhere along the way, a concept didn't click — and instead of pausing to fix it, 
-                    the class moved on. Neil's teaching philosophy starts there: find the gap, fill it 
-                    properly, and rebuild from a solid foundation.</p>
+        <h2>Vision, Mission &amp; Philosophy</h2>
+        <p style="color:#475569; font-size:1rem; margin:0 0 2rem;">What we believe. How we teach. Why it works.</p>
 
-                    <p>Every session is a conversation, not a lecture. Students are encouraged to ask 
-                    "why" — because understanding <em>why</em> something works is what lets you solve a 
-                    problem you've never seen before. That's the skill that earns top scores on the SAT, 
-                    GRE, and GMAT, and it's the skill that carries you through university and beyond.</p>
+        <!-- Dark hero cards -->
+        <div class="vm-split reveal">
+            <div class="vm-dark vm-dark-v">
+                <h3>Our Vision</h3>
+                <p>Too many bright students feel lost — not because they lack ability, but because no one has taught them <em>their</em> way yet. Every student who works with us leaves knowing they are capable of more than they believed — whether the goal is cracking the SAT, surviving calculus, or getting into a dream school.</p>
+            </div>
+            <div class="vm-dark vm-dark-m">
+                <h3>Our Mission</h3>
+                <p>Meet students exactly where they are — no judgment, no one-size-fits-all worksheets, no wasted sessions reviewing things they already know. Every lesson is built around <em>you</em>: your gaps, your goals, your timeline. Confidence built on real understanding lasts far beyond test day.</p>
+            </div>
+        </div>
 
-                    <p>Neil adapts to how <em>you</em> think. Some students need visual diagrams. Others 
-                    need to talk through logic step by step. Some need a slower pace on fundamentals before 
-                    accelerating — others are ready to be pushed harder than their classroom ever pushed them. 
-                    There is no standard template here, because no two students learn the same way.</p>
-
-                    <p>The goal is never just the next test. It's building the kind of academic confidence 
-                    where a student sits down in an exam, sees a hard question, and thinks — <em>"I've got this."</em></p>
-                
-            </article>
-    
-  </section>  
+        <!-- Philosophy step grid -->
+        <div class="phil-wrap reveal">
+            <p class="phil-label">Teaching Philosophy</p>
+            <p class="phil-intro">Most students don't struggle because they aren't smart enough. They struggle because somewhere along the way, a concept didn't click — and instead of pausing to fix it, the class moved on. Neil starts there: find the gap, fill it properly, and rebuild from a solid foundation.</p>
+            <div class="phil-steps">
+                <div class="phil-step">
+                    <strong>Find the gap</strong>
+                    <span>Diagnose exactly where understanding broke down — not just what the wrong answer was. Every session begins by identifying the real source of the problem.</span>
+                </div>
+                <div class="phil-step">
+                    <strong>Ask "why"</strong>
+                    <span>Understanding <em>why</em> something works is what lets you solve a problem you've never seen before. That's the skill that earns top scores on the SAT, GRE, and GMAT.</span>
+                </div>
+                <div class="phil-step">
+                    <strong>Adapt to you</strong>
+                    <span>Visual diagrams, step-by-step logic, slower fundamentals, or harder acceleration — Neil adapts to how <em>you</em> think. No standard template, because no two students learn the same way.</span>
+                </div>
+                <div class="phil-step">
+                    <strong>Build lasting confidence</strong>
+                    <span>The goal is never just the next test. It's building the kind of academic confidence where a student sits down in an exam, sees a hard question, and thinks — <em>"I've got this."</em></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section id="contact_new">
     <div class="contact-center">
         <h2>Contact Us</h2>
