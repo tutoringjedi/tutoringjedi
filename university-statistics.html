@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="canonical" href="https://tutoringjedi.ca/university-statistics.html" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Statistics Tutoring Toronto | Stats, Research Methods, Analytics | Tutoring Jedi</title>
+  <meta name="description" content="Expert university Statistics tutoring in Toronto and online. Neil Chakraborty — Adjunct Professor at Seneca Polytechnic — tutors Statistics, Research Methods, Business Analytics and Machine Learning. Book a free consultation today.">
+  <meta name="keywords" content="university statistics tutor Toronto, stats tutoring online, research methods tutor, business analytics tutoring, SPSS tutor, R tutoring, machine learning tutor, Neil Chakraborty, Tutoring Jedi">
+  <meta name="author" content="Neil Chakraborty">
+  <meta property="og:title" content="University Statistics Tutoring Toronto | Tutoring Jedi">
+  <meta property="og:description" content="Expert university-level Statistics, Research Methods, Business Analytics and Machine Learning tutoring in Toronto and online.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 17px; color: #334155; background-color: #ffffff; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; font-weight: 600; line-height: 1.3; }
+    p { margin-bottom: 1.25rem; }
+    a { text-decoration: none; }
+
+    /* ── Header ── */
+    header { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: #ffffff; padding: 1.5rem 2rem; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .header-content { display: flex; align-items: center; flex-direction: row; justify-content: center; gap: 0.5rem; width: 100%; }
+    .header-text h1 { margin: 0; font-size: 2rem; font-family: 'Poppins', sans-serif; font-weight: 700; }
+    .header-text p { margin: 0.25rem 0 0 0; font-size: 1rem; opacity: 0.95; font-style: italic; color: #ffffff; }
+    .logo-white { color: #ffffff; }
+    .logo-gold { color: #f59e0b; text-shadow: 0 0 16px rgba(245,158,11,0.4); }
+    .logo-ca { color: #fcd34d; font-size: 1.4rem; font-weight: 600; vertical-align: baseline; }
+    .logo-divider { width: 100%; height: 1px; background: linear-gradient(to right, rgba(245,158,11,0.8), transparent); margin: 3px 0 5px 0; }
+
+    /* Pen */
+    .pen-wrap { display: flex; flex-direction: column; align-items: center; width: 28px; flex-shrink: 0; position: relative; overflow: visible; }
+    .pen-swoosh { position: absolute; left: -4px; top: -22px; width: 24px; height: 70px; border-left: 3px solid #f59e0b; border-top: 3px solid #f59e0b; box-shadow: -2px 0 10px rgba(245,158,11,0.6); border-radius: 70% 70% 0 0; transform: rotate(-8deg); }
+    .pen-blade { width: 8px; height: 52px; background: linear-gradient(180deg, #fde68a 0%, #f59e0b 25%, #d97706 60%, #b45309 100%); border-radius: 5px 5px 1px 1px; box-shadow: inset -2px 0 4px rgba(0,0,0,0.15), inset 2px 0 3px rgba(255,255,255,0.2), 0 0 12px rgba(245,158,11,0.3); position: relative; z-index: 2; }
+    .pen-blade::after { content: ''; position: absolute; top: 6px; left: 2px; width: 3px; height: 50px; background: linear-gradient(180deg, rgba(255,255,255,0.4), transparent); border-radius: 2px; }
+    .pen-guard { width: 14px; height: 5px; background: linear-gradient(180deg, #e2e8f0, #94a3b8); border-radius: 2px; box-shadow: 0 1px 3px rgba(0,0,0,0.3); position: relative; z-index: 2; }
+    .pen-hilt { width: 10px; height: 13px; background: linear-gradient(180deg, #94a3b8, #64748b, #475569); border-radius: 1px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: space-around; align-items: center; padding: 3px 0; }
+    .pen-hilt::before, .pen-hilt::after { content: ''; display: block; width: 100%; height: 1.5px; background: rgba(255,255,255,0.25); border-radius: 1px; }
+    .pen-collar { width: 12px; height: 4px; background: linear-gradient(180deg, #94a3b8, #64748b); border-radius: 1px; position: relative; z-index: 2; }
+    .pen-nib { width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 12px solid #d97706; position: relative; z-index: 2; filter: drop-shadow(0 2px 3px rgba(180,83,9,0.4)); }
+    .pen-nib::after { content: ''; position: absolute; top: -15px; left: -1px; width: 2px; height: 11px; background: rgba(30,60,114,0.5); border-radius: 1px; }
+
+    /* ── Nav ── */
+    nav { background-color: #2a5298; position: sticky; top: 0; z-index: 1000; }
+    .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; align-items: center; padding: 0 1.5rem; }
+    nav > .nav-container > ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; margin: 0; padding: 0; }
+    nav a { color: #ffffff; text-decoration: none; padding: 1rem 1.25rem; display: block; font-weight: 500; transition: all 0.3s ease; border-radius: 4px; }
+    nav a:hover, nav a:focus { background-color: rgba(255,255,255,0.2); outline: none; transform: translateY(-1px); }
+    .menu-toggle { display: none; background: none; border: 2px solid rgba(255,255,255,0.5); color: white; font-size: 1.5rem; cursor: pointer; padding: 0.5rem; border-radius: 6px; }
+    .has-submenu { position: relative; }
+    .submenu { display: none; position: absolute; top: 100%; left: 0; background-color: #1e3c72; list-style: none; padding: 0; margin: 0; min-width: 200px; border-radius: 0 0 8px 8px; }
+    .submenu li a { display: block; padding: 0.75rem 1rem; color: white; }
+    .has-submenu:hover .submenu { display: block; }
+
+    /* ── Hero ── */
+    .hero { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 5rem 2rem; }
+    .hero-wrapper { display: flex; align-items: center; justify-content: space-between; gap: 4rem; max-width: 1200px; margin: 0 auto; }
+    .hero-text { flex: 1; }
+    .hero-badge { display: inline-block; background: #1e3c72; color: #f59e0b; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 14px; border-radius: 50px; margin-bottom: 1.2rem; }
+    .hero-text h2 { font-size: 2.75rem; color: #1e3c72; margin-bottom: 1.5rem; line-height: 1.2; }
+    .hero-text h2 em { font-style: normal; color: #f59e0b; }
+    .hero-text p { font-size: 1.15rem; color: #475569; margin-bottom: 2rem; }
+    .cta-button { display: inline-block; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; padding: 1rem 2.5rem; border-radius: 50px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(245,158,11,0.3); font-family: 'Poppins', sans-serif; }
+    .cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(245,158,11,0.4); color: white; }
+
+    /* ── Stats ── */
+    .stats-bar { background: #1e3c72; padding: 2.5rem 2rem; }
+    .stats-bar .container { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1.5rem; text-align: center; }
+    .stat-item span { display: block; font-size: 2.5rem; font-weight: 700; color: #f59e0b; font-family: 'Poppins', sans-serif; }
+    .stat-item p { margin: 0; color: #ffffff; font-size: 0.95rem; }
+
+    /* ── Layout ── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    section { padding: 5rem 0; }
+    section:nth-of-type(even) { background-color: #f8fafc; }
+    h2 { text-align: center; color: #1e3c72; margin-bottom: 3rem; font-size: 2.5rem; }
+
+    /* ── Tile grid ── */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; border-radius: 16px; overflow: hidden; border: 1px solid #e2e8f0; }
+    .about-tile { background: #ffffff; padding: 2rem; }
+    .about-tile-alt { background: #f8fafc; }
+    .about-tile-pill { display: inline-block; font-size: 0.85rem; font-weight: 700; background: #1e3c72; color: #fcd34d; padding: 3px 12px; border-radius: 50px; margin-bottom: 0.75rem; letter-spacing: 0.03em; }
+    .about-tile h3 { color: #1e3c72; font-size: 1.1rem; margin: 0 0 0.6rem; }
+    .about-tile p { color: #475569; font-size: 0.92rem; line-height: 1.7; margin: 0; }
+
+    /* ── Course cards ── */
+    .courses-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
+    .course-card { background: #ffffff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 4px solid #2a5298; padding: 2rem; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .course-card:nth-child(even) { border-top-color: #f59e0b; }
+    .course-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(30,60,114,0.15); }
+    .course-pill { display: inline-block; font-size: 0.75rem; font-weight: 700; background: #1e3c72; color: #fcd34d; padding: 2px 10px; border-radius: 50px; margin-bottom: 0.75rem; }
+    .course-card h3 { color: #1e3c72; font-size: 1.05rem; margin: 0 0 0.5rem; }
+    .course-card p { color: #475569; font-size: 0.88rem; line-height: 1.7; margin: 0 0 1rem; }
+    .course-card ul { list-style: none; padding: 0; margin: 0; }
+    .course-card ul li { font-size: 0.85rem; color: #475569; padding: 0.25rem 0; border-bottom: 1px solid #f1f5f9; display: flex; align-items: center; gap: 0.4rem; }
+    .course-card ul li:last-child { border-bottom: none; }
+    .course-card ul li::before { content: '▸'; color: #f59e0b; font-size: 0.7rem; flex-shrink: 0; }
+
+    /* ── Tools strip ── */
+    .tools-strip { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2.5rem; }
+    .tool-badge { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 0.8rem 1.4rem; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.06); transition: transform 0.2s, box-shadow 0.2s; }
+    .tool-badge:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(30,60,114,0.1); }
+    .tool-badge .tool-name { font-family: 'Poppins', sans-serif; font-weight: 700; color: #1e3c72; font-size: 1rem; display: block; }
+    .tool-badge .tool-desc { font-size: 0.72rem; color: #94a3b8; display: block; margin-top: 2px; }
+
+    /* ── Steps ── */
+    .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 2rem; }
+    .step-card { background: #ffffff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 4px solid #2a5298; padding: 2rem 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .step-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(30,60,114,0.15); }
+    .step-number { font-family: 'Poppins', sans-serif; font-size: 2.2rem; font-weight: 700; color: #e2e8f0; line-height: 1; margin-bottom: 0.8rem; }
+    .step-card h3 { color: #1e3c72; font-size: 1rem; margin-bottom: 0.5rem; }
+    .step-card p { font-size: 0.9rem; color: #475569; margin: 0; }
+
+    /* ── Testimonials ── */
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .testimonial { background: #ffffff; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; border-left: 4px solid #f59e0b; }
+    .testimonial:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(30,60,114,0.2); }
+    .stars { color: #f59e0b; font-size: 1.2rem; margin-bottom: 0.75rem; }
+    .score-chip { display: inline-block; background: #1e3c72; color: #fcd34d; font-size: 0.8rem; font-weight: 700; padding: 3px 12px; border-radius: 50px; margin-bottom: 1rem; font-family: 'Poppins', sans-serif; }
+    .testimonial-text { font-style: italic; color: #475569; margin-bottom: 1.25rem; line-height: 1.7; }
+    .testimonial-author { font-weight: 600; color: #1e3c72; font-size: 0.95rem; }
+
+    /* ── Tutor ── */
+    .tutor-section { background: #f8fafc !important; }
+    .tutor-wrapper { display: grid; grid-template-columns: 300px 1fr; gap: 3rem; align-items: start; max-width: 1200px; margin: 0 auto; padding: 5rem 2rem; }
+    .tutor-card { background: #ffffff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-top: 4px solid #f59e0b; padding: 2.5rem 2rem; text-align: center; }
+    .tutor-image-ring { padding: 5px; border-radius: 50%; background: linear-gradient(135deg, #667eea, #764ba2); box-shadow: 0 8px 20px rgba(0,0,0,0.15); display: inline-block; margin-bottom: 1.2rem; }
+    .tutor-image { width: 130px; height: 130px; border-radius: 50%; overflow: hidden; background: #fff; }
+    .tutor-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+    .tutor-card:hover .tutor-image img { transform: scale(1.08); }
+    .tutor-card h3 { color: #1e3c72; font-size: 1.3rem; margin-bottom: 0.2rem; }
+    .tutor-title { font-style: italic; color: #f59e0b; font-weight: 600; margin-bottom: 1rem; display: block; }
+    .tutor-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem; margin-top: 1rem; }
+    .tutor-tag { background: #f1f5f9; color: #475569; font-size: 0.75rem; font-weight: 600; padding: 3px 10px; border-radius: 50px; }
+    .neil-bio h2 { text-align: left; margin-bottom: 1rem; font-size: 1.8rem; }
+    .neil-bio p { color: #475569; }
+    .credential-list { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin-top: 1.2rem; }
+    .credential-list li { font-size: 0.88rem; color: #475569; display: flex; align-items: flex-start; gap: 0.5rem; }
+    .credential-list li::before { content: '✦'; color: #f59e0b; font-size: 0.65rem; margin-top: 0.3rem; flex-shrink: 0; }
+
+    /* ── FAQ ── */
+    .faq-wrapper { max-width: 780px; margin: 0 auto; padding: 0 2rem; }
+    details { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; margin-bottom: 0.8rem; transition: box-shadow 0.2s; }
+    details[open] { box-shadow: 0 4px 16px rgba(30,60,114,0.1); border-color: #2a5298; }
+    summary { padding: 1.1rem 1.4rem; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #1e3c72; font-family: 'Poppins', sans-serif; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; color: #f59e0b; font-size: 1.3rem; line-height: 1; flex-shrink: 0; }
+    details[open] summary::after { content: '−'; }
+    .faq-body { padding: 0 1.4rem 1.2rem; font-size: 0.93rem; color: #475569; line-height: 1.7; }
+
+    /* ── Contact ── */
+    #contact { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important; color: white; }
+    #contact h2 { color: white; }
+    #contact p { font-size: 1.1rem; color: rgba(255,255,255,0.9); }
+    .contact-info { max-width: 600px; margin: 0 auto; text-align: center; }
+    .contact-item { background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; backdrop-filter: blur(10px); }
+    .contact-item h3 { color: white; margin-bottom: 0.5rem; }
+    .contact-item strong { color: #f59e0b; }
+
+    footer { background-color: #1e3c72; color: #ffffff; text-align: center; padding: 2rem 1rem; }
+    footer p { margin: 0.5rem 0; }
+
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 1000px) {
+      .courses-grid { grid-template-columns: repeat(2, 1fr); }
+      .steps-grid { grid-template-columns: repeat(2, 1fr); }
+      .tutor-wrapper { grid-template-columns: 1fr; padding: 3rem 2rem; }
+      .neil-bio h2 { text-align: center; }
+      .credential-list { grid-template-columns: 1fr; }
+      .hero-wrapper { flex-direction: column; gap: 2rem; }
+    }
+    @media (max-width: 768px) {
+      .menu-toggle { display: block; }
+      nav { position: relative; }
+      nav ul { display: none; flex-direction: column; width: 200px; background-color: #1e3c72; position: absolute; top: 56px; right: 0; left: auto; border-radius: 0 0 10px 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.25); z-index: 999; overflow: hidden; }
+      nav ul.open { display: flex; }
+      nav ul li { width: 100%; }
+      nav ul li a { padding: 0.85rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.95rem; }
+      .submenu { position: static; width: 100%; }
+      .has-submenu.open .submenu { display: flex; flex-direction: column; }
+      .about-grid { grid-template-columns: 1fr; }
+      .courses-grid { grid-template-columns: 1fr; }
+      .steps-grid { grid-template-columns: 1fr; }
+      h2 { font-size: 1.8rem; }
+      .hero-text h2 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ── -->
+<header role="banner">
+  <div class="header-content">
+    <div class="pen-wrap">
+      <div class="pen-swoosh"></div><div class="pen-blade"></div><div class="pen-guard"></div>
+      <div class="pen-hilt"></div><div class="pen-collar"></div><div class="pen-nib"></div>
+    </div>
+    <div class="header-text">
+      <h1><span class="logo-white">Tutoring</span><span class="logo-gold">Jedi</span><span class="logo-ca">.ca</span></h1>
+      <div class="logo-divider"></div>
+      <p>Let the Wisdom be with You</p>
+    </div>
+  </div>
+</header>
+
+<!-- ── Nav ── -->
+<nav aria-label="Primary navigation">
+  <div class="nav-container">
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li class="has-submenu">
+        <a href="#">About</a>
+        <ul class="submenu">
+          <li><a href="/Meet_Neil.html">Meet Neil</a></li>
+          <li><a href="/Philosophy.html">Philosophy</a></li>
+        </ul>
+      </li>
+      <li><a href="/Testimonials.html">Testimonials</a></li>
+      <li><a href="/FAQ.html">FAQ</a></li>
+      <li class="has-submenu">
+        <a href="#">Courses</a>
+        <ul class="submenu">
+          <li><a href="/SAT.html">SAT</a></li>
+          <li><a href="/ACT.html">ACT</a></li>
+          <li><a href="/GRE.html">GRE</a></li>
+          <li><a href="/GMAT.html">GMAT</a></li>
+          <li><a href="/highschool-math-physics.html">High School Math &amp; Physics</a></li>
+          <li><a href="/university-statistics.html">University Statistics</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="#">Jedi Resources</a>
+        <ul class="submenu">
+          <li><a href="/Resources.html">Resources</a></li>
+          <li><a href="/resources_us.html">🇺🇸 US Admissions</a></li>
+          <li><a href="/resources_canada.html">🇨🇦 Canada</a></li>
+          <li><a href="/resources_uk_europe.html">🇬🇧 UK &amp; Europe</a></li>
+          <li><a href="/resources_aus_nz.html">🇦🇺 Australia &amp; NZ</a></li>
+          <li><a href="/resources_global.html">🌐 Rest of World</a></li>
+        </ul>
+      </li>
+      <li><a href="/Contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<!-- ── Hero ── -->
+<section class="hero">
+  <div class="hero-wrapper">
+    <div class="hero-text">
+      <div class="hero-badge">University Level · Toronto &amp; Online</div>
+      <h2>University <em>Statistics</em> Tutoring<br>From an Actual Professor</h2>
+      <p>Struggling with Stats, Research Methods, Business Analytics, or Machine Learning? Neil is an Adjunct Professor who teaches these courses at the post-secondary level — and tutors them with the same depth, in plain language, one-on-one.</p>
+      <a href="/Contact.html" class="cta-button">Schedule Your Free Consultation</a>
+    </div>
+    <div style="flex:1; max-width:500px;">
+      <img src="teaching.png" alt="Neil Chakraborty tutoring university statistics"
+        style="width:100%; border-radius:20px; box-shadow:0 20px 60px rgba(0,0,0,0.2);" loading="eager">
+    </div>
+  </div>
+</section>
+
+<!-- ── Stats ── -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="stat-item"><span>Prof.</span><p>Active Adjunct Professor</p></div>
+    <div class="stat-item"><span>25+</span><p>Years in Research &amp; Analytics</p></div>
+    <div class="stat-item"><span>4</span><p>Courses Supported</p></div>
+    <div class="stat-item"><span>1000+</span><p>Students Helped</p></div>
+  </div>
+</div>
+
+<!-- ── Why Stats is hard ── -->
+<section id="why-hard">
+  <div class="container">
+    <h2>Why University Statistics Trips Students Up</h2>
+    <p style="text-align:center; color:#475569; font-size:1.05rem; max-width:700px; margin:-1rem auto 2.5rem;">
+      Statistics is unlike most university courses. The concepts build relentlessly on each other, the notation is unfamiliar, and lectures rarely slow down enough for the ideas to land. Most students don't struggle because they're not smart enough — they struggle because no one has explained it in plain language yet.
+    </p>
+    <div class="about-grid reveal">
+      <div class="about-tile">
+        <div class="about-tile-pill">The Problem</div>
+        <h3>Concepts That Compound</h3>
+        <p>Miss the logic of hypothesis testing in Week 4, and Week 8 on regression becomes incomprehensible. Neil identifies where the chain broke and rebuilds from there — efficiently, so you can catch up without falling further behind.</p>
+      </div>
+      <div class="about-tile about-tile-alt">
+        <div class="about-tile-pill">The Fix</div>
+        <h3>Plain Language First</h3>
+        <p>Neil explains every concept in plain language before introducing formulas. Once a student understands what a p-value actually means, the formula stops being a mystery to memorize and becomes a tool they can use.</p>
+      </div>
+      <div class="about-tile about-tile-alt">
+        <div class="about-tile-pill">The Advantage</div>
+        <h3>Taught by Someone Who Teaches It</h3>
+        <p>Neil doesn't just know Statistics — he actively teaches Business Analytics and Research Methods at Seneca Polytechnic, one of Canada's largest colleges. He knows exactly how these courses are structured, what professors look for, and where students typically get stuck.</p>
+      </div>
+      <div class="about-tile">
+        <div class="about-tile-pill">The Result</div>
+        <h3>Understanding That Sticks</h3>
+        <p>The goal is never just to survive the midterm. It's building enough real understanding that you can apply statistical reasoning to new problems — in your research, your career, or your next course.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Courses ── -->
+<section id="courses">
+  <div class="container">
+    <h2>Courses We Support</h2>
+    <p style="text-align:center; color:#475569; font-size:1.05rem; max-width:680px; margin:-1rem auto 2.5rem;">
+      Neil tutors across a range of university-level quantitative courses — from introductory statistics to graduate-level research methods and machine learning.
+    </p>
+    <div class="courses-grid reveal">
+      <div class="course-card">
+        <div class="course-pill">Most Common</div>
+        <h3>Introductory Statistics</h3>
+        <p>The most widely taken — and most frequently failed — quantitative course in university. Neil makes the core concepts click.</p>
+        <ul>
+          <li>Descriptive statistics and data distributions</li>
+          <li>Probability and the normal distribution</li>
+          <li>Confidence intervals</li>
+          <li>Hypothesis testing (z-test, t-test)</li>
+          <li>Chi-square and ANOVA</li>
+          <li>Correlation and simple regression</li>
+        </ul>
+      </div>
+      <div class="course-card">
+        <div class="course-pill">Research &amp; Graduate</div>
+        <h3>Research Methods</h3>
+        <p>For undergrad and graduate students in social science, psychology, education, business, and health disciplines.</p>
+        <ul>
+          <li>Research design and sampling</li>
+          <li>Reliability and validity</li>
+          <li>Quantitative vs. qualitative methods</li>
+          <li>Survey design and measurement</li>
+          <li>Interpreting statistical output</li>
+          <li>Thesis and capstone support</li>
+        </ul>
+      </div>
+      <div class="course-card">
+        <div class="course-pill">Business &amp; Analytics</div>
+        <h3>Business Analytics</h3>
+        <p>For MBA, BCom, and post-graduate analytics students applying statistics to real business decisions.</p>
+        <ul>
+          <li>Descriptive and predictive analytics</li>
+          <li>Multiple regression and forecasting</li>
+          <li>Decision analysis and optimization</li>
+          <li>Data visualization and dashboards</li>
+          <li>Excel, Power BI, and Tableau basics</li>
+          <li>Case study and assignment support</li>
+        </ul>
+      </div>
+      <div class="course-card">
+        <div class="course-pill">Advanced</div>
+        <h3>Applied Regression &amp; Multivariate</h3>
+        <p>For students in upper-year or graduate quantitative courses going beyond introductory statistics.</p>
+        <ul>
+          <li>Multiple linear regression</li>
+          <li>Logistic regression</li>
+          <li>ANOVA and ANCOVA</li>
+          <li>Factor analysis and PCA</li>
+          <li>Model selection and diagnostics</li>
+          <li>Interpreting output in SPSS / R / Python</li>
+        </ul>
+      </div>
+      <div class="course-card">
+        <div class="course-pill">Emerging Field</div>
+        <h3>Machine Learning Foundations</h3>
+        <p>For graduate students and post-grad learners in data science, AI, or analytics programs.</p>
+        <ul>
+          <li>Supervised vs. unsupervised learning</li>
+          <li>Linear and logistic regression as ML</li>
+          <li>Decision trees and random forests</li>
+          <li>Model evaluation: accuracy, AUC, RMSE</li>
+          <li>Overfitting, regularization, cross-validation</li>
+          <li>Python (scikit-learn) and R support</li>
+        </ul>
+      </div>
+      <div class="course-card">
+        <div class="course-pill">Tools &amp; Software</div>
+        <h3>Statistical Software Support</h3>
+        <p>Many students understand the concepts but struggle with the software. Neil tutors the tools alongside the theory.</p>
+        <ul>
+          <li>SPSS — full course support</li>
+          <li>R and RStudio</li>
+          <li>Python (pandas, scipy, statsmodels)</li>
+          <li>Excel for statistical analysis</li>
+          <li>Interpreting output and writing results</li>
+          <li>APA-style results reporting</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Software tools ── -->
+<section id="tools">
+  <div class="container">
+    <h2>Statistical Tools Neil Tutors</h2>
+    <p style="text-align:center; color:#475569; font-size:1rem; max-width:600px; margin:-1rem auto 2rem;">
+      Knowing the concepts is one thing. Executing in software — and interpreting the output correctly — is another. Neil bridges both.
+    </p>
+    <div class="tools-strip reveal">
+      <div class="tool-badge"><span class="tool-name">SPSS</span><span class="tool-desc">Full course support</span></div>
+      <div class="tool-badge"><span class="tool-name">R</span><span class="tool-desc">RStudio &amp; tidyverse</span></div>
+      <div class="tool-badge"><span class="tool-name">Python</span><span class="tool-desc">pandas · scipy · sklearn</span></div>
+      <div class="tool-badge"><span class="tool-name">Excel</span><span class="tool-desc">Data analysis add-in</span></div>
+      <div class="tool-badge"><span class="tool-name">Tableau</span><span class="tool-desc">Data visualization</span></div>
+      <div class="tool-badge"><span class="tool-name">Power BI</span><span class="tool-desc">Business dashboards</span></div>
+      <div class="tool-badge"><span class="tool-name">SAS</span><span class="tool-desc">SAS Certified tutor</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Method ── -->
+<section id="method">
+  <div class="container">
+    <h2>How Neil Teaches Statistics</h2>
+    <div class="steps-grid reveal">
+      <div class="step-card">
+        <div class="step-number">01</div>
+        <h3>Understand Where You Are</h3>
+        <p>Neil reviews your syllabus, current assignment, and recent assessments in the first session to understand exactly what needs to be covered — and in what order.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">02</div>
+        <h3>Concept Before Formula</h3>
+        <p>Every statistical concept is explained in plain language before any notation is introduced. Understanding what you're calculating — and why — changes everything.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">03</div>
+        <h3>Real Examples</h3>
+        <p>Neil connects every concept to real-world examples from business, health, social science, or your own field. Abstract statistics becomes concrete and memorable.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">04</div>
+        <h3>Assignment &amp; Exam Ready</h3>
+        <p>Sessions are always oriented toward your actual deliverables — upcoming assignments, midterms, finals, or thesis chapters. Theory serves practice, not the other way around.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Testimonials ── -->
+<section id="testimonials">
+  <div class="container">
+    <h2>What Students Say</h2>
+    <div class="testimonials-grid reveal">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <div class="score-chip">Midterm 54 → Final 81</div>
+        <p class="testimonial-text">"I was taking a university Statistics course and completely lost after the first midterm. Neil explained concepts in plain language and connected everything to real examples. I went from a 54 on my midterm to an 81 on my final. Absolutely worth it."</p>
+        <div class="testimonial-author">— Fatima A., University Student</div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <div class="score-chip">Graduate ML coursework · Princeton</div>
+        <p class="testimonial-text">"Neil tutored me in Machine Learning for my graduate coursework. What impressed me most was that he didn't just help me pass — he made sure I actually understood the theory behind the algorithms. That depth of knowledge made a huge difference in my research project."</p>
+        <div class="testimonial-author">— James T., Graduate Student</div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <div class="score-chip">SPSS &amp; Research Methods thesis</div>
+        <p class="testimonial-text">"I was drowning in SPSS output for my thesis and had no idea how to interpret the results. Neil walked me through multiple regression analysis step by step and explained exactly how to write up my findings in APA format. My supervisor was impressed."</p>
+        <div class="testimonial-author">— Danielle R., Master's Student, York University</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Neil ── -->
+<section class="tutor-section" id="neil">
+  <div class="tutor-wrapper">
+    <div class="tutor-card">
+      <div class="tutor-image-ring">
+        <div class="tutor-image"><img src="Neil.jpg" alt="Neil Chakraborty, Statistics Tutor"></div>
+      </div>
+      <h3>Neil Chakraborty</h3>
+      <span class="tutor-title">Founder &amp; Lead Tutor</span>
+      <p style="font-size:0.85rem; color:#475569; margin:0 0 0.5rem;">Adjunct Professor · Seneca Polytechnic<br>MS &amp; MPhil · University of Utah</p>
+      <div class="tutor-tags">
+        <span class="tutor-tag">Statistics</span>
+        <span class="tutor-tag">Research Methods</span>
+        <span class="tutor-tag">Analytics</span>
+        <span class="tutor-tag">Machine Learning</span>
+        <span class="tutor-tag">SPSS</span>
+        <span class="tutor-tag">R</span>
+        <span class="tutor-tag">Python</span>
+      </div>
+    </div>
+    <div class="neil-bio">
+      <h2>Tutored by the Professor Who Teaches It</h2>
+      <p>Neil Chakraborty is an active Adjunct Professor at Seneca Polytechnic — one of Canada's largest colleges with over 65,000 students — where he teaches Business Analytics, Research Methods, and related quantitative courses to undergraduate and post-graduate students. He doesn't just know this material; he designs and delivers it at the university level every semester.</p>
+      <p>His professional background adds a layer of real-world depth that most tutors can't offer: 25+ years in data analytics and institutional research, including a senior analytics role at the University of Toronto. Neil connects statistical theory to the way data is actually used in organizations — making abstract concepts concrete and immediately applicable.</p>
+      <p>He is also SAS Certified, holds a double Master's degree in a quantitative field, and has spent his career at the intersection of research, data, and education. When a student works with Neil on Statistics, they're working with someone who lives and breathes this material professionally.</p>
+      <ul class="credential-list">
+        <li>Adjunct Professor, Seneca Polytechnic</li>
+        <li>MS &amp; MPhil, University of Utah</li>
+        <li>M.Sc. &amp; B.Sc. Physics</li>
+        <li>Institutional Research Analyst, UofT</li>
+        <li>SAS Certified Analyst</li>
+        <li>25+ Years Research &amp; Analytics</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section id="faq">
+  <div class="faq-wrapper">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>I have an assignment due soon — can we work on it directly?</summary>
+      <div class="faq-body">Yes. Many students come to Neil with a specific assignment, midterm, or project deadline in mind. Sessions can be focused entirely on understanding the concepts needed to complete a specific task. Neil won't do your work for you — but he will make sure you understand it well enough to complete it confidently yourself.</div>
+    </details>
+    <details>
+      <summary>I failed my midterm. Can I still turn this course around?</summary>
+      <div class="faq-body">In most cases, yes. Many students have gone from a failing midterm to a passing or strong final grade after working with Neil. The key is identifying where the conceptual understanding broke down and rebuilding efficiently. Contact Neil as soon as possible after a disappointing result — the more time available before the final, the better.</div>
+    </details>
+    <details>
+      <summary>Do you help with thesis and dissertation statistics?</summary>
+      <div class="faq-body">Yes. Neil supports graduate students at the thesis and dissertation stage — including choosing appropriate statistical tests, running analyses in SPSS, R, or Python, interpreting output, and writing up results in APA or other required formats. This is one of the most common requests from Master's and PhD students.</div>
+    </details>
+    <details>
+      <summary>What statistical software do you tutor?</summary>
+      <div class="faq-body">SPSS, R (including RStudio and tidyverse), Python (pandas, scipy, statsmodels, scikit-learn), Excel, SAS, Tableau, and Power BI. Most students working on research methods or thesis chapters need SPSS or R. Students in analytics or data science programs typically need Python or R. Neil will adapt to whatever your course or program requires.</div>
+    </details>
+    <details>
+      <summary>I'm not a math person. Can I really learn Statistics?</summary>
+      <div class="faq-body">Yes — and Neil hears this constantly. Most university Statistics courses require very little advanced math. What they require is clear logical thinking and the ability to understand what a statistical procedure is actually doing. Neil's plain-language approach is specifically designed for students who don't think of themselves as "math people" — and it works.</div>
+    </details>
+    <details>
+      <summary>Do you tutor online or in-person?</summary>
+      <div class="faq-body">Both. Neil tutors in-person in Toronto and the GTA, and online for students at universities across Ontario, Canada, and internationally. For statistics tutoring in particular, online sessions work extremely well — screen sharing makes it easy to work through SPSS output, R scripts, or Python notebooks together in real time.</div>
+    </details>
+  </div>
+</section>
+
+<!-- ── Contact ── -->
+<section id="contact">
+  <div class="container">
+    <h2>Ready to Get Statistics Under Control?</h2>
+    <div class="contact-info">
+      <div class="contact-item">
+        <h3>Reach Out</h3>
+        <p><strong>Email:</strong> tutoringjedi@gmail.com</p>
+        <p><strong>Location:</strong> Toronto, Ontario, Canada</p>
+        <p><strong>Hours:</strong> Monday–Saturday, 9:00 AM–8:00 PM</p>
+      </div>
+      <a href="mailto:tutoringjedi@gmail.com" class="cta-button" style="margin-top:1rem;">Book Your Free Consultation</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+  <p>&copy; 2026 Tutoring Jedi. All rights reserved.</p>
+  <p>Empowering students to master their potential.</p>
+</footer>
+
+<script>
+  const revealElements = document.querySelectorAll('.reveal');
+  const revealOnScroll = () => { revealElements.forEach(el => { if (el.getBoundingClientRect().top < window.innerHeight - 80) el.classList.add('visible'); }); };
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll();
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navUl = document.querySelector('nav ul');
+  menuToggle.addEventListener('click', () => { const isOpen = navUl.classList.toggle('open'); menuToggle.setAttribute('aria-expanded', String(isOpen)); menuToggle.innerHTML = isOpen ? '&#10005;' : '&#9776;'; });
+  navUl.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navUl.classList.remove('open'); menuToggle.setAttribute('aria-expanded', 'false'); menuToggle.innerHTML = '&#9776;'; }); });
+  document.querySelectorAll('.has-submenu > a').forEach(link => { link.addEventListener('click', function(e) { if (window.innerWidth <= 768) { e.preventDefault(); this.closest('.has-submenu').classList.toggle('open'); } }); });
+  document.querySelectorAll('a[href="#"]').forEach(link => { link.addEventListener('click', e => e.preventDefault()); });
+</script>
+</body>
+</html>
