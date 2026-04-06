@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="canonical" href="https://tutoringjedi.ca/highschool-math-physics.html" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High School Math & Physics Tutoring Toronto | Grades 9–12 | Tutoring Jedi</title>
+  <meta name="description" content="Expert high school Math and Physics tutoring in Toronto and online. Grades 9–12. Neil Chakraborty rebuilds fundamentals and delivers consistent grade improvements. Book a free consultation today.">
+  <meta name="keywords" content="high school math tutor Toronto, physics tutor Toronto, grade 9 10 11 12 math, Ontario math tutoring, calculus tutor GTA, physics tutor Markham, Neil Chakraborty, Tutoring Jedi">
+  <meta name="author" content="Neil Chakraborty">
+  <meta property="og:title" content="High School Math & Physics Tutoring Toronto | Grades 9–12 | Tutoring Jedi">
+  <meta property="og:description" content="Expert high school Math and Physics tutoring in Toronto and online. Consistent grade improvements for Grades 9–12.">
+  <meta property="og:type" content="website">
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+ 
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 17px; color: #334155; background-color: #ffffff; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; font-weight: 600; line-height: 1.3; }
+    p { margin-bottom: 1.25rem; }
+    a { text-decoration: none; }
+ 
+    /* ── Header ── */
+    header { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: #ffffff; padding: 1.5rem 2rem; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .header-content { display: flex; align-items: center; flex-direction: row; justify-content: center; gap: 0.5rem; width: 100%; }
+    .header-text h1 { margin: 0; font-size: 2rem; font-family: 'Poppins', sans-serif; font-weight: 700; }
+    .header-text p { margin: 0.25rem 0 0 0; font-size: 1rem; opacity: 0.95; font-style: italic; color: #ffffff; }
+    .logo-white { color: #ffffff; }
+    .logo-gold { color: #f59e0b; text-shadow: 0 0 16px rgba(245,158,11,0.4); }
+    .logo-ca { color: #fcd34d; font-size: 1.4rem; font-weight: 600; vertical-align: baseline; }
+    .logo-divider { width: 100%; height: 1px; background: linear-gradient(to right, rgba(245,158,11,0.8), transparent); margin: 3px 0 5px 0; }
+ 
+    /* Pen */
+    .pen-wrap { display: flex; flex-direction: column; align-items: center; width: 28px; flex-shrink: 0; position: relative; overflow: visible; }
+    .pen-swoosh { position: absolute; left: -4px; top: -22px; width: 24px; height: 70px; border-left: 3px solid #f59e0b; border-top: 3px solid #f59e0b; box-shadow: -2px 0 10px rgba(245,158,11,0.6); border-radius: 70% 70% 0 0; transform: rotate(-8deg); }
+    .pen-blade { width: 8px; height: 52px; background: linear-gradient(180deg, #fde68a 0%, #f59e0b 25%, #d97706 60%, #b45309 100%); border-radius: 5px 5px 1px 1px; box-shadow: inset -2px 0 4px rgba(0,0,0,0.15), inset 2px 0 3px rgba(255,255,255,0.2), 0 0 12px rgba(245,158,11,0.3); position: relative; z-index: 2; }
+    .pen-blade::after { content: ''; position: absolute; top: 6px; left: 2px; width: 3px; height: 50px; background: linear-gradient(180deg, rgba(255,255,255,0.4), transparent); border-radius: 2px; }
+    .pen-guard { width: 14px; height: 5px; background: linear-gradient(180deg, #e2e8f0, #94a3b8); border-radius: 2px; box-shadow: 0 1px 3px rgba(0,0,0,0.3); position: relative; z-index: 2; }
+    .pen-hilt { width: 10px; height: 13px; background: linear-gradient(180deg, #94a3b8, #64748b, #475569); border-radius: 1px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: space-around; align-items: center; padding: 3px 0; }
+    .pen-hilt::before, .pen-hilt::after { content: ''; display: block; width: 100%; height: 1.5px; background: rgba(255,255,255,0.25); border-radius: 1px; }
+    .pen-collar { width: 12px; height: 4px; background: linear-gradient(180deg, #94a3b8, #64748b); border-radius: 1px; position: relative; z-index: 2; }
+    .pen-nib { width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 12px solid #d97706; position: relative; z-index: 2; filter: drop-shadow(0 2px 3px rgba(180,83,9,0.4)); }
+    .pen-nib::after { content: ''; position: absolute; top: -15px; left: -1px; width: 2px; height: 11px; background: rgba(30,60,114,0.5); border-radius: 1px; }
+ 
+    /* ── Nav ── */
+    nav { background-color: #2a5298; position: sticky; top: 0; z-index: 1000; }
+    .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; align-items: center; padding: 0 1.5rem; }
+    nav > .nav-container > ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; margin: 0; padding: 0; }
+    nav a { color: #ffffff; text-decoration: none; padding: 1rem 1.25rem; display: block; font-weight: 500; transition: all 0.3s ease; border-radius: 4px; }
+    nav a:hover, nav a:focus { background-color: rgba(255,255,255,0.2); outline: none; transform: translateY(-1px); }
+    .menu-toggle { display: none; background: none; border: 2px solid rgba(255,255,255,0.5); color: white; font-size: 1.5rem; cursor: pointer; padding: 0.5rem; border-radius: 6px; }
+    .has-submenu { position: relative; }
+    .submenu { display: none; position: absolute; top: 100%; left: 0; background-color: #1e3c72; list-style: none; padding: 0; margin: 0; min-width: 200px; border-radius: 0 0 8px 8px; }
+    .submenu li a { display: block; padding: 0.75rem 1rem; color: white; }
+    .has-submenu:hover .submenu { display: block; }
+ 
+    /* ── Hero ── */
+    .hero { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 5rem 2rem; }
+    .hero-wrapper { display: flex; align-items: center; justify-content: space-between; gap: 4rem; max-width: 1200px; margin: 0 auto; }
+    .hero-text { flex: 1; }
+    .hero-badge { display: inline-block; background: #1e3c72; color: #f59e0b; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 14px; border-radius: 50px; margin-bottom: 1.2rem; }
+    .hero-text h2 { font-size: 2.75rem; color: #1e3c72; margin-bottom: 1.5rem; line-height: 1.2; }
+    .hero-text h2 em { font-style: normal; color: #f59e0b; }
+    .hero-text p { font-size: 1.15rem; color: #475569; margin-bottom: 2rem; }
+    .cta-button { display: inline-block; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; padding: 1rem 2.5rem; border-radius: 50px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(245,158,11,0.3); font-family: 'Poppins', sans-serif; }
+    .cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(245,158,11,0.4); color: white; }
+ 
+    /* ── Stats ── */
+    .stats-bar { background: #1e3c72; padding: 2.5rem 2rem; }
+    .stats-bar .container { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1.5rem; text-align: center; }
+    .stat-item span { display: block; font-size: 2.5rem; font-weight: 700; color: #f59e0b; font-family: 'Poppins', sans-serif; }
+    .stat-item p { margin: 0; color: #ffffff; font-size: 0.95rem; }
+ 
+    /* ── Layout ── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    section { padding: 5rem 0; }
+    section:nth-of-type(even) { background-color: #f8fafc; }
+    h2 { text-align: center; color: #1e3c72; margin-bottom: 3rem; font-size: 2.5rem; }
+ 
+    /* ── Tile grid ── */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; border-radius: 16px; overflow: hidden; border: 1px solid #e2e8f0; }
+    .about-tile { background: #ffffff; padding: 2rem; }
+    .about-tile-alt { background: #f8fafc; }
+    .about-tile-pill { display: inline-block; font-size: 0.85rem; font-weight: 700; background: #1e3c72; color: #fcd34d; padding: 3px 12px; border-radius: 50px; margin-bottom: 0.75rem; letter-spacing: 0.03em; }
+    .about-tile h3 { color: #1e3c72; font-size: 1.1rem; margin: 0 0 0.6rem; }
+    .about-tile p { color: #475569; font-size: 0.92rem; line-height: 1.7; margin: 0; }
+ 
+    /* ── Grade cards ── */
+    .grades-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 2rem; }
+    .grade-card { background: #ffffff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 4px solid #2a5298; padding: 1.8rem 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .grade-card:nth-child(even) { border-top-color: #f59e0b; }
+    .grade-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(30,60,114,0.15); }
+    .grade-label { font-family: 'Poppins', sans-serif; font-size: 1.8rem; font-weight: 700; color: #e2e8f0; line-height: 1; margin-bottom: 0.6rem; }
+    .grade-card h3 { color: #1e3c72; font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .grade-card ul { list-style: none; padding: 0; margin: 0; }
+    .grade-card ul li { font-size: 0.85rem; color: #475569; padding: 0.25rem 0; border-bottom: 1px solid #f1f5f9; display: flex; align-items: center; gap: 0.4rem; }
+    .grade-card ul li:last-child { border-bottom: none; }
+    .grade-card ul li::before { content: '▸'; color: #f59e0b; font-size: 0.7rem; flex-shrink: 0; }
+ 
+    /* ── Coverage ── */
+    .coverage-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
+    .coverage-card { background: #ffffff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 4px solid #f59e0b; padding: 2rem; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .coverage-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(30,60,114,0.15); }
+    .coverage-card h3 { color: #1e3c72; font-size: 1.05rem; margin-bottom: 0.2rem; }
+    .coverage-card .tag { font-size: 0.75rem; font-weight: 600; color: #f59e0b; display: block; margin-bottom: 1rem; letter-spacing: 0.05em; }
+    .coverage-card ul { list-style: none; padding: 0; margin: 0; }
+    .coverage-card ul li { font-size: 0.9rem; color: #475569; padding: 0.3rem 0; border-bottom: 1px solid #f1f5f9; display: flex; align-items: center; gap: 0.5rem; }
+    .coverage-card ul li:last-child { border-bottom: none; }
+    .coverage-card ul li::before { content: '▸'; color: #f59e0b; font-size: 0.75rem; flex-shrink: 0; }
+ 
+    /* ── Steps ── */
+    .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 2rem; }
+    .step-card { background: #ffffff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 4px solid #2a5298; padding: 2rem 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .step-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(30,60,114,0.15); }
+    .step-number { font-family: 'Poppins', sans-serif; font-size: 2.2rem; font-weight: 700; color: #e2e8f0; line-height: 1; margin-bottom: 0.8rem; }
+    .step-card h3 { color: #1e3c72; font-size: 1rem; margin-bottom: 0.5rem; }
+    .step-card p { font-size: 0.9rem; color: #475569; margin: 0; }
+ 
+    /* ── Testimonials ── */
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .testimonial { background: #ffffff; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; border-left: 4px solid #f59e0b; }
+    .testimonial:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(30,60,114,0.2); }
+    .stars { color: #f59e0b; font-size: 1.2rem; margin-bottom: 0.75rem; }
+    .score-chip { display: inline-block; background: #1e3c72; color: #fcd34d; font-size: 0.8rem; font-weight: 700; padding: 3px 12px; border-radius: 50px; margin-bottom: 1rem; font-family: 'Poppins', sans-serif; }
+    .testimonial-text { font-style: italic; color: #475569; margin-bottom: 1.25rem; line-height: 1.7; }
+    .testimonial-author { font-weight: 600; color: #1e3c72; font-size: 0.95rem; }
+ 
+    /* ── Tutor ── */
+    .tutor-section { background: #f8fafc !important; }
+    .tutor-wrapper { display: grid; grid-template-columns: 300px 1fr; gap: 3rem; align-items: start; max-width: 1200px; margin: 0 auto; padding: 5rem 2rem; }
+    .tutor-card { background: #ffffff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-top: 4px solid #f59e0b; padding: 2.5rem 2rem; text-align: center; }
+    .tutor-image-ring { padding: 5px; border-radius: 50%; background: linear-gradient(135deg, #667eea, #764ba2); box-shadow: 0 8px 20px rgba(0,0,0,0.15); display: inline-block; margin-bottom: 1.2rem; }
+    .tutor-image { width: 130px; height: 130px; border-radius: 50%; overflow: hidden; background: #fff; }
+    .tutor-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+    .tutor-card:hover .tutor-image img { transform: scale(1.08); }
+    .tutor-card h3 { color: #1e3c72; font-size: 1.3rem; margin-bottom: 0.2rem; }
+    .tutor-title { font-style: italic; color: #f59e0b; font-weight: 600; margin-bottom: 1rem; display: block; }
+    .tutor-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem; margin-top: 1rem; }
+    .tutor-tag { background: #f1f5f9; color: #475569; font-size: 0.75rem; font-weight: 600; padding: 3px 10px; border-radius: 50px; }
+    .neil-bio h2 { text-align: left; margin-bottom: 1rem; font-size: 1.8rem; }
+    .neil-bio p { color: #475569; }
+    .credential-list { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin-top: 1.2rem; }
+    .credential-list li { font-size: 0.88rem; color: #475569; display: flex; align-items: flex-start; gap: 0.5rem; }
+    .credential-list li::before { content: '✦'; color: #f59e0b; font-size: 0.65rem; margin-top: 0.3rem; flex-shrink: 0; }
+ 
+    /* ── FAQ ── */
+    .faq-wrapper { max-width: 780px; margin: 0 auto; padding: 0 2rem; }
+    details { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; margin-bottom: 0.8rem; transition: box-shadow 0.2s; }
+    details[open] { box-shadow: 0 4px 16px rgba(30,60,114,0.1); border-color: #2a5298; }
+    summary { padding: 1.1rem 1.4rem; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #1e3c72; font-family: 'Poppins', sans-serif; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; color: #f59e0b; font-size: 1.3rem; line-height: 1; flex-shrink: 0; }
+    details[open] summary::after { content: '−'; }
+    .faq-body { padding: 0 1.4rem 1.2rem; font-size: 0.93rem; color: #475569; line-height: 1.7; }
+ 
+    /* ── Contact ── */
+    #contact { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important; color: white; }
+    #contact h2 { color: white; }
+    #contact p { font-size: 1.1rem; color: rgba(255,255,255,0.9); }
+    .contact-info { max-width: 600px; margin: 0 auto; text-align: center; }
+    .contact-item { background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; backdrop-filter: blur(10px); }
+    .contact-item h3 { color: white; margin-bottom: 0.5rem; }
+    .contact-item strong { color: #f59e0b; }
+ 
+    footer { background-color: #1e3c72; color: #ffffff; text-align: center; padding: 2rem 1rem; }
+    footer p { margin: 0.5rem 0; }
+ 
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+ 
+    @media (max-width: 1000px) {
+      .grades-grid { grid-template-columns: repeat(2, 1fr); }
+      .steps-grid { grid-template-columns: repeat(2, 1fr); }
+      .coverage-grid { grid-template-columns: repeat(2, 1fr); }
+      .tutor-wrapper { grid-template-columns: 1fr; padding: 3rem 2rem; }
+      .neil-bio h2 { text-align: center; }
+      .credential-list { grid-template-columns: 1fr; }
+      .hero-wrapper { flex-direction: column; gap: 2rem; }
+    }
+    @media (max-width: 768px) {
+      .menu-toggle { display: block; }
+      nav { position: relative; }
+      nav ul { display: none; flex-direction: column; width: 200px; background-color: #1e3c72; position: absolute; top: 56px; right: 0; left: auto; border-radius: 0 0 10px 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.25); z-index: 999; overflow: hidden; }
+      nav ul.open { display: flex; }
+      nav ul li { width: 100%; }
+      nav ul li a { padding: 0.85rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.95rem; }
+      .submenu { position: static; width: 100%; }
+      .has-submenu.open .submenu { display: flex; flex-direction: column; }
+      .about-grid { grid-template-columns: 1fr; }
+      .grades-grid { grid-template-columns: 1fr; }
+      .steps-grid { grid-template-columns: 1fr; }
+      .coverage-grid { grid-template-columns: 1fr; }
+      h2 { font-size: 1.8rem; }
+      .hero-text h2 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+ 
+<!-- ── Header ── -->
+<header role="banner">
+  <div class="header-content">
+    <div class="pen-wrap">
+      <div class="pen-swoosh"></div><div class="pen-blade"></div><div class="pen-guard"></div>
+      <div class="pen-hilt"></div><div class="pen-collar"></div><div class="pen-nib"></div>
+    </div>
+    <div class="header-text">
+      <h1><span class="logo-white">Tutoring</span><span class="logo-gold">Jedi</span><span class="logo-ca">.ca</span></h1>
+      <div class="logo-divider"></div>
+      <p>Let the Wisdom be with You</p>
+    </div>
+  </div>
+</header>
+ 
+<!-- ── Nav ── -->
+<nav aria-label="Primary navigation">
+  <div class="nav-container">
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li class="has-submenu">
+        <a href="#">About</a>
+        <ul class="submenu">
+          <li><a href="/Meet_Neil.html">Meet Neil</a></li>
+          <li><a href="/Philosophy.html">Philosophy</a></li>
+        </ul>
+      </li>
+      <li><a href="/Testimonials.html">Testimonials</a></li>
+      <li><a href="/FAQ.html">FAQ</a></li>
+      <li class="has-submenu">
+        <a href="#">Courses</a>
+        <ul class="submenu">
+          <li><a href="/SAT.html">SAT</a></li>
+          <li><a href="/ACT.html">ACT</a></li>
+          <li><a href="/GRE.html">GRE</a></li>
+          <li><a href="/GMAT.html">GMAT</a></li>
+          <li><a href="/highschool-math-physics.html">High School Math &amp; Physics</a></li>
+          <li><a href="/university-statistics.html">University Statistics</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="#">Jedi Resources</a>
+        <ul class="submenu">
+          <li><a href="/Resources.html">Resources</a></li>
+          <li><a href="/resources_us.html">🇺🇸 US Admissions</a></li>
+          <li><a href="/resources_canada.html">🇨🇦 Canada</a></li>
+          <li><a href="/resources_uk_europe.html">🇬🇧 UK &amp; Europe</a></li>
+          <li><a href="/resources_aus_nz.html">🇦🇺 Australia &amp; NZ</a></li>
+          <li><a href="/resources_global.html">🌐 Rest of World</a></li>
+        </ul>
+      </li>
+      <li><a href="/Contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+ 
+<main id="main-content">
+ 
+<!-- ── Hero ── -->
+<section class="hero">
+  <div class="hero-wrapper">
+    <div class="hero-text">
+      <div class="hero-badge">High School · Grades 9–12 · Toronto &amp; Online</div>
+      <h2>High School <em>Math &amp; Physics</em><br>Tutoring That Actually Works</h2>
+      <p>Whether rebuilding fundamentals from scratch or pushing beyond grade level, every session is tailored to exactly where the student is right now. Consistent results across Grade 9–12 Math and Physics — including students protecting university offer conditions.</p>
+      <a href="/Contact.html" class="cta-button">Schedule Your Free Consultation</a>
+    </div>
+    <div style="flex:1; max-width:500px;">
+      <img src="teaching.png" alt="Neil tutoring high school students"
+        style="width:100%; border-radius:20px; box-shadow:0 20px 60px rgba(0,0,0,0.2);" loading="eager">
+    </div>
+  </div>
+</section>
+ 
+<!-- ── Stats ── -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="stat-item"><span>15+</span><p>Years Teaching Experience</p></div>
+    <div class="stat-item"><span>Gr. 7–12</span><p>All Grade Levels Covered</p></div>
+    <div class="stat-item"><span>95%</span><p>Grade Improvement Rate</p></div>
+    <div class="stat-item"><span>1000+</span><p>Students Helped</p></div>
+  </div>
+</div>
+ 
+<!-- ── Why students struggle ── -->
+<section id="approach">
+  <div class="container">
+    <h2>Why Students Struggle — and How We Fix It</h2>
+    <p style="text-align:center; color:#475569; font-size:1.05rem; max-width:700px; margin:-1rem auto 2.5rem;">
+      Most students don't struggle in Math or Physics because they aren't capable. They struggle because somewhere along the way, a foundational concept didn't click — and instead of pausing to fix it, the class moved on. Neil starts there.
+    </p>
+    <div class="about-grid reveal">
+      <div class="about-tile">
+        <div class="about-tile-pill">The Real Problem</div>
+        <h3>Gaps, Not Ability</h3>
+        <p>A student who can't do Grade 11 Trigonometry is often missing something from Grade 10 — or even Grade 9. Neil identifies the actual source of the breakdown, not just the symptom showing up on a recent test.</p>
+      </div>
+      <div class="about-tile about-tile-alt">
+        <div class="about-tile-pill">The Fix</div>
+        <h3>Rebuild From the Right Place</h3>
+        <p>Once the gap is found, Neil rebuilds that specific concept properly — with real understanding, not just a trick to get through the next quiz. Understanding compounds: each concept repaired makes the next one easier.</p>
+      </div>
+      <div class="about-tile about-tile-alt">
+        <div class="about-tile-pill">The Result</div>
+        <h3>Confidence That Lasts</h3>
+        <p>The goal is never just the next test. It's building the kind of academic confidence where a student walks into an exam and thinks — "I've got this." That confidence translates across subjects and into university.</p>
+      </div>
+      <div class="about-tile">
+        <div class="about-tile-pill">The Approach</div>
+        <h3>Tailored to Each Student</h3>
+        <p>Visual diagrams, step-by-step logic, slowing down on fundamentals, or accelerating beyond grade level — Neil adapts to how each student thinks. No two students get the same session plan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ── Grade by grade ── -->
+<section id="grades">
+  <div class="container">
+    <h2>Grade-by-Grade Coverage</h2>
+    <p style="text-align:center; color:#475569; font-size:1.05rem; max-width:680px; margin:-1rem auto 2.5rem;">
+      From rebuilding Grade 9 foundations to preparing for university-bound Grade 12 courses, Neil covers the full Ontario secondary Math and Physics curriculum.
+    </p>
+    <div class="grades-grid reveal">
+      <div class="grade-card">
+        <div class="grade-label">Gr. 9</div>
+        <h3>Math (MPM1D / MFM1P)</h3>
+        <ul>
+          <li>Number sense and algebra</li>
+          <li>Linear relations</li>
+          <li>Measurement and geometry</li>
+          <li>Analytic geometry</li>
+        </ul>
+      </div>
+      <div class="grade-card">
+        <div class="grade-label">Gr. 10</div>
+        <h3>Math (MPM2D / MFM2P)</h3>
+        <ul>
+          <li>Quadratic relations</li>
+          <li>Analytic geometry</li>
+          <li>Trigonometry intro</li>
+          <li>Systems of equations</li>
+        </ul>
+      </div>
+      <div class="grade-card">
+        <div class="grade-label">Gr. 11</div>
+        <h3>Math &amp; Physics (MCR3U / SPH3U)</h3>
+        <ul>
+          <li>Functions and inverses</li>
+          <li>Trigonometry (unit circle)</li>
+          <li>Kinematics &amp; dynamics</li>
+          <li>Energy and momentum</li>
+        </ul>
+      </div>
+      <div class="grade-card">
+        <div class="grade-label">Gr. 12</div>
+        <h3>Math &amp; Physics (MHF4U / MCV4U / SPH4U)</h3>
+        <ul>
+          <li>Advanced Functions</li>
+          <li>Calculus &amp; Vectors</li>
+          <li>Fields, waves, modern physics</li>
+          <li>University offer protection</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ── What we cover ── -->
+<section id="curriculum">
+  <div class="container">
+    <h2>What We Cover</h2>
+    <div class="coverage-grid reveal">
+      <div class="coverage-card">
+        <h3>Algebra &amp; Functions</h3>
+        <span class="tag">Grades 9–12 Math Foundation</span>
+        <ul>
+          <li>Linear and quadratic equations</li>
+          <li>Polynomial and rational functions</li>
+          <li>Exponential and logarithmic functions</li>
+          <li>Transformations and inverses</li>
+          <li>Systems of equations</li>
+        </ul>
+      </div>
+      <div class="coverage-card">
+        <h3>Trigonometry &amp; Geometry</h3>
+        <span class="tag">Grades 10–12</span>
+        <ul>
+          <li>SOHCAHTOA and sine/cosine rules</li>
+          <li>Unit circle and radian measure</li>
+          <li>Trigonometric identities</li>
+          <li>Analytic geometry</li>
+          <li>Vectors in 2D and 3D</li>
+        </ul>
+      </div>
+      <div class="coverage-card">
+        <h3>Calculus</h3>
+        <span class="tag">Grade 12 MCV4U</span>
+        <ul>
+          <li>Limits and continuity</li>
+          <li>Derivatives: rules and applications</li>
+          <li>Curve sketching and optimization</li>
+          <li>Introduction to integration</li>
+          <li>University calculus preparation</li>
+        </ul>
+      </div>
+      <div class="coverage-card">
+        <h3>Kinematics &amp; Dynamics</h3>
+        <span class="tag">Physics — SPH3U / SPH4U</span>
+        <ul>
+          <li>1D and 2D motion</li>
+          <li>Newton's laws and free body diagrams</li>
+          <li>Projectile motion</li>
+          <li>Friction and inclined planes</li>
+          <li>Circular motion and gravitation</li>
+        </ul>
+      </div>
+      <div class="coverage-card">
+        <h3>Energy, Waves &amp; Electricity</h3>
+        <span class="tag">Physics — SPH3U / SPH4U</span>
+        <ul>
+          <li>Work, energy, and power</li>
+          <li>Momentum and collisions</li>
+          <li>Wave properties and optics</li>
+          <li>Electric fields and circuits</li>
+          <li>Magnetic fields</li>
+        </ul>
+      </div>
+      <div class="coverage-card">
+        <h3>Exam &amp; University Prep</h3>
+        <span class="tag">Grade 12 Focus</span>
+        <ul>
+          <li>Protecting university offer conditions</li>
+          <li>Final exam and culminating task prep</li>
+          <li>EQAO and standardized test strategy</li>
+          <li>University calculus preview</li>
+          <li>Engineering &amp; science program prep</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ── Method ── -->
+<section id="method">
+  <div class="container">
+    <h2>How Neil Teaches</h2>
+    <div class="steps-grid reveal">
+      <div class="step-card">
+        <div class="step-number">01</div>
+        <h3>Locate the Gap</h3>
+        <p>Neil begins every new student relationship by finding where the actual breakdown is — not just the topic on the current test, but the earlier concept that was never fully understood.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">02</div>
+        <h3>Rebuild Properly</h3>
+        <p>No workarounds or memorization tricks. Neil rebuilds the concept from the ground up with genuine understanding — because that's the only kind that holds up under exam pressure.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">03</div>
+        <h3>Connect Forward</h3>
+        <p>Every concept Neil teaches is connected to what comes next. Students don't just learn the current unit — they see how it fits into the larger structure of Math or Physics.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">04</div>
+        <h3>Build Independence</h3>
+        <p>The goal is a student who doesn't need a tutor forever. Neil teaches problem-solving strategies and self-checking habits so students can tackle new problems on their own.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ── Testimonials ── -->
+<section id="testimonials">
+  <div class="container">
+    <h2>What Students &amp; Parents Say</h2>
+    <div class="testimonials-grid reveal">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <div class="score-chip">Grade 12 Calculus · 61 → 78</div>
+        <p class="testimonial-text">"Neil tutored my son in Grade 12 Calculus when he was at risk of not meeting his university offer conditions. Within six weeks he went from a 61 to a 78. Neil has a rare ability to make a student feel capable rather than overwhelmed. We are so grateful."</p>
+        <div class="testimonial-author">— Susan H., Parent</div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <div class="score-chip">Grade 11 Physics · 88 final grade</div>
+        <p class="testimonial-text">"My son was struggling with Grade 11 Physics and we were worried about his university applications. Neil rebuilt his fundamentals from scratch and he finished the year with an 88. More importantly, he actually understands the material now."</p>
+        <div class="testimonial-author">— Linda C., Parent</div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <div class="score-chip">From failing to confident</div>
+        <p class="testimonial-text">"I failed my first Grade 10 Math test and panicked. After four sessions with Neil I understood where my gaps were — things from Grade 9 I thought I knew but didn't. By the end of the semester I had an 81. He completely changed how I think about math."</p>
+        <div class="testimonial-author">— Priya K., Grade 10 Student</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ── Neil ── -->
+<section class="tutor-section" id="neil">
+  <div class="tutor-wrapper">
+    <div class="tutor-card">
+      <div class="tutor-image-ring">
+        <div class="tutor-image"><img src="Neil.jpg" alt="Neil Chakraborty, Math and Physics Tutor"></div>
+      </div>
+      <h3>Neil Chakraborty</h3>
+      <span class="tutor-title">Founder &amp; Lead Tutor</span>
+      <p style="font-size:0.85rem; color:#475569; margin:0 0 0.5rem;">MS &amp; MPhil · University of Utah<br>Adjunct Professor · Seneca Polytechnic</p>
+      <div class="tutor-tags">
+        <span class="tutor-tag">Gr. 9–12 Math</span>
+        <span class="tutor-tag">Physics</span>
+        <span class="tutor-tag">Calculus</span>
+        <span class="tutor-tag">SAT</span>
+        <span class="tutor-tag">ACT</span>
+        <span class="tutor-tag">GRE</span>
+      </div>
+    </div>
+    <div class="neil-bio">
+      <h2>A Physics Graduate Who Has Taught at Every Level</h2>
+      <p>Neil holds a B.Sc. and M.Sc. in Physics, giving him a depth of subject knowledge that goes far beyond what any high school curriculum requires. When a student asks "but <em>why</em> does this work?", Neil always has a real answer — not a textbook deflection.</p>
+      <p>As an Adjunct Professor at Seneca Polytechnic, Neil teaches mathematics and analytics at the post-secondary level. This means he understands exactly what universities expect students to know when they arrive — and prepares Grade 12 students for that transition with precision.</p>
+      <p>His teaching philosophy is grounded in a simple belief: if a student is struggling, the problem is almost always a missed foundational concept, not lack of ability. Find the gap, fix it properly, and watch everything else fall into place.</p>
+      <ul class="credential-list">
+        <li>M.Sc. &amp; B.Sc. Physics</li>
+        <li>MS &amp; MPhil, University of Utah</li>
+        <li>Adjunct Professor, Seneca Polytechnic</li>
+        <li>Institutional Research, University of Toronto</li>
+        <li>25+ Years Teaching &amp; Research</li>
+        <li>PMP &amp; SAS Certified</li>
+      </ul>
+    </div>
+  </div>
+</section>
+ 
+<!-- ── FAQ ── -->
+<section id="faq">
+  <div class="faq-wrapper">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>My child is failing — is it too late to turn things around?</summary>
+      <div class="faq-body">It's rarely too late. Neil has helped students go from failing grades to passing — and from passing to strong — even late in the semester. The key is identifying the foundational gap quickly and working efficiently. The earlier you reach out the better, but don't wait for the situation to be perfect before starting.</div>
+    </details>
+    <details>
+      <summary>Do you follow the Ontario curriculum?</summary>
+      <div class="faq-body">Yes. Neil is fully familiar with the Ontario secondary school curriculum for Mathematics (MPM1D, MPM2D, MCR3U, MHF4U, MCV4U) and Physics (SPH3U, SPH4U). Sessions are built around the student's current course, textbook, and upcoming assessments.</div>
+    </details>
+    <details>
+      <summary>My child's university offer depends on their Grade 12 grade. Can you help?</summary>
+      <div class="faq-body">Yes — and this is one of the most common situations Neil handles. He has helped many students protect and improve conditional university offers, working intensively on exactly the material that matters most before the deadline. Contact Neil as early as possible so there's enough time to make a meaningful difference.</div>
+    </details>
+    <details>
+      <summary>Do you tutor Grade 7 and 8 students as well?</summary>
+      <div class="faq-body">Yes. While the focus of this page is Grades 9–12, Neil also works with Grade 7 and 8 students — particularly those who want to build a strong foundation before high school, or who are preparing for gifted/enriched program assessments.</div>
+    </details>
+    <details>
+      <summary>How often should my child have sessions?</summary>
+      <div class="faq-body">For most students, one or two sessions per week is the right cadence — enough to make consistent progress without overwhelming the student's existing workload. Students with upcoming exams or urgent grade issues sometimes benefit from more intensive short-term schedules. Neil will advise after the first session.</div>
+    </details>
+    <details>
+      <summary>Do you offer in-person and online sessions?</summary>
+      <div class="faq-body">Both. Neil tutors in-person in Toronto and the Greater Toronto Area, and online via video call for students across Ontario and beyond. The approach and results are equally strong in both formats.</div>
+    </details>
+  </div>
+</section>
+ 
+<!-- ── Contact ── -->
+<section id="contact">
+  <div class="container">
+    <h2>Ready to Turn Things Around?</h2>
+    <div class="contact-info">
+      <div class="contact-item">
+        <h3>Reach Out</h3>
+        <p><strong>Email:</strong> tutoringjedi@gmail.com</p>
+        <p><strong>Location:</strong> Toronto, Ontario, Canada</p>
+        <p><strong>Hours:</strong> Monday–Saturday, 9:00 AM–8:00 PM</p>
+      </div>
+      <a href="mailto:tutoringjedi@gmail.com" class="cta-button" style="margin-top:1rem;">Book Your Free Consultation</a>
+    </div>
+  </div>
+</section>
+ 
+</main>
+ 
+<footer role="contentinfo">
+  <p>&copy; 2026 Tutoring Jedi. All rights reserved.</p>
+  <p>Empowering students to master their potential.</p>
+</footer>
+ 
+<script>
+  const revealElements = document.querySelectorAll('.reveal');
+  const revealOnScroll = () => { revealElements.forEach(el => { if (el.getBoundingClientRect().top < window.innerHeight - 80) el.classList.add('visible'); }); };
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll();
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navUl = document.querySelector('nav ul');
+  menuToggle.addEventListener('click', () => { const isOpen = navUl.classList.toggle('open'); menuToggle.setAttribute('aria-expanded', String(isOpen)); menuToggle.innerHTML = isOpen ? '&#10005;' : '&#9776;'; });
+  navUl.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navUl.classList.remove('open'); menuToggle.setAttribute('aria-expanded', 'false'); menuToggle.innerHTML = '&#9776;'; }); });
+  document.querySelectorAll('.has-submenu > a').forEach(link => { link.addEventListener('click', function(e) { if (window.innerWidth <= 768) { e.preventDefault(); this.closest('.has-submenu').classList.toggle('open'); } }); });
+  document.querySelectorAll('a[href="#"]').forEach(link => { link.addEventListener('click', e => e.preventDefault()); });
+</script>
+</body>
+</html>
