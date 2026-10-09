@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
   <link rel="canonical" href="https://tutoringjedi.ca/test-prep-tutoring-toronto.html" />
+  <script>
+  if (window.location.hostname === "www.tutoringjedi.ca") {
+      window.location.replace(
+          "https://tutoringjedi.ca" +
+          window.location.pathname +
+          window.location.search +
+          window.location.hash
+      );
+  }
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Prep Tutoring Toronto, North York, Markham, Thornhill, Richmond Hill | SAT ACT GRE GMAT | Tutoring Jedi</title>
-  <meta name="description" content="Expert SAT, ACT, GRE and GMAT tutoring in Toronto, North York, Markham, Thornhill, Richmond Hill and across Ontario. Online tutoring available worldwide. Book a free consultation with Neil Chakraborty today.">
+  <title>Test Prep Tutoring Toronto &amp; GTA | SAT ACT GRE GMAT | Tutoring Jedi</title>
+  <meta name="description" content="SAT, ACT, GRE and GMAT tutoring in Toronto, North York, Markham, Thornhill, Richmond Hill and online. Book a free consultation with Neil Chakraborty.">
   <meta name="keywords" content="test prep tutoring Toronto, SAT tutor Toronto, ACT tutor Markham, GRE tutor Richmond Hill, GMAT tutor North York, SAT prep Thornhill, online test prep Ontario, SAT ACT GRE GMAT Canada, Neil Chakraborty tutor">
   <meta name="author" content="Neil Chakraborty">
-  <meta property="og:title" content="Test Prep Tutoring Toronto & GTA | SAT ACT GRE GMAT | Tutoring Jedi">
+  <meta property="og:title" content="Test Prep Tutoring Toronto &amp; GTA | SAT ACT GRE GMAT | Tutoring Jedi">
   <meta property="og:description" content="Expert SAT, ACT, GRE and GMAT tutoring serving Toronto, North York, Markham, Thornhill, Richmond Hill and online worldwide.">
   <meta property="og:type" content="website">
  
@@ -66,7 +76,7 @@
     /* ── Header ── */
     header { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: #ffffff; padding: 1.5rem 2rem; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
     .header-content { display: flex; align-items: center; flex-direction: row; justify-content: center; gap: 0.5rem; width: 100%; }
-    .header-text h1 { margin: 0; font-size: 2rem; font-family: 'Poppins', sans-serif; font-weight: 700; }
+    .header-text .site-title { margin: 0; font-size: 2rem; font-family: 'Poppins', sans-serif; font-weight: 700; line-height: 1.3; }
     .header-text p { margin: 0.25rem 0 0 0; font-size: 1rem; opacity: 0.95; font-style: italic; color: #ffffff; }
     .logo-white { color: #ffffff; }
     .logo-gold  { color: #f59e0b; text-shadow: 0 0 16px rgba(245,158,11,0.4); }
@@ -102,8 +112,8 @@
     .hero-wrapper { display: flex; align-items: center; justify-content: space-between; gap: 4rem; max-width: 1200px; margin: 0 auto; }
     .hero-text { flex: 1; }
     .hero-badge { display: inline-block; background: #1e3c72; color: #f59e0b; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 14px; border-radius: 50px; margin-bottom: 1.2rem; }
-    .hero-text h2 { font-size: 2.75rem; color: #1e3c72; margin-bottom: 1rem; line-height: 1.2; }
-    .hero-text h2 em { font-style: normal; color: #f59e0b; }
+    .hero-text h1 { font-size: 2.75rem; color: #1e3c72; margin: 0 0 1rem; line-height: 1.2; }
+    .hero-text h1 em { font-style: normal; color: #f59e0b; }
     .hero-text p { font-size: 1.15rem; color: #475569; margin-bottom: 2rem; }
  
     /* Location tag strip */
@@ -207,6 +217,7 @@
     summary::after { content: '+'; color: #f59e0b; font-size: 1.3rem; line-height: 1; flex-shrink: 0; }
     details[open] summary::after { content: '−'; }
     .faq-body { padding: 0 1.4rem 1.2rem; font-size: 0.93rem; color: #475569; line-height: 1.7; }
+    .faq-body a { color: #2a5298; font-weight: 600; text-decoration: underline; }
  
     /* ── Contact ── */
     #contact { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important; color: white; }
@@ -247,7 +258,7 @@
       .locations-grid { grid-template-columns: 1fr; }
       .about-grid { grid-template-columns: 1fr; }
       h2 { font-size: 1.8rem; }
-      .hero-text h2 { font-size: 2rem; }
+      .hero-text h1 { font-size: 2rem; }
       .online-banner { padding: 2rem; }
     }
   </style>
@@ -266,7 +277,7 @@
       <div class="pen-nib"></div>
     </div>
     <div class="header-text">
-      <h1><span class="logo-white">Tutoring</span><span class="logo-gold">Jedi</span><span class="logo-ca">.ca</span></h1>
+      <div class="site-title"><span class="logo-white">Tutoring</span><span class="logo-gold">Jedi</span><span class="logo-ca">.ca</span></div>
       <div class="logo-divider"></div>
       <p>Let the Wisdom be with You</p>
     </div>
@@ -286,17 +297,20 @@
           <li><a href="/Philosophy.html">Philosophy</a></li>
         </ul>
       </li>
-      <li><a href="/Testimonials.html">Testimonials</a></li>
-      <li><a href="/FAQ.html">FAQ</a></li>
       <li class="has-submenu">
-        <a href="#">Test Prep</a>
+        <a href="#">Courses</a>
         <ul class="submenu">
+          <li><a href="/university-admissions.html">University Admission</a></li>
           <li><a href="/SAT.html">SAT</a></li>
           <li><a href="/ACT.html">ACT</a></li>
           <li><a href="/GRE.html">GRE</a></li>
           <li><a href="/GMAT.html">GMAT</a></li>
+          <li><a href="/highschool-math-physics.html">High School Math &amp; Physics</a></li>
+          <li><a href="/university-statistics.html">University Statistics</a></li>
         </ul>
       </li>
+      <li><a href="/Testimonials.html">Testimonials</a></li>
+      <li><a href="/FAQ.html">FAQ</a></li>
       <li class="has-submenu">
         <a href="#">Jedi Resources</a>
         <ul class="submenu">
@@ -320,8 +334,8 @@
   <div class="hero-wrapper">
     <div class="hero-text">
       <div class="hero-badge">Toronto · GTA · Ontario · Canada · Online</div>
-      <h2>Expert <em>Test Prep Tutoring</em><br>Wherever You Are</h2>
-      <p>SAT, ACT, GRE and GMAT tutoring serving students across the Greater Toronto Area and online worldwide. Taught by Neil Chakraborty — 15+ years of experience, 1000+ students helped, average score gains that speak for themselves.</p>
+      <h1>Expert <em>Test Prep Tutoring</em><br>Wherever You Are</h1>
+      <p>SAT, ACT, GRE and GMAT tutoring serving students across the Greater Toronto Area and online worldwide. Taught by Neil Chakraborty — 20+ years of experience, 2000+ students helped, average score gains that speak for themselves.</p>
       <div class="location-tags">
         <span class="location-tag">📍 Toronto</span>
         <span class="location-tag">📍 North York</span>
@@ -344,8 +358,8 @@
 <!-- ── Stats ── -->
 <div class="stats-bar">
   <div class="container">
-    <div class="stat-item"><span>1000+</span><p>Students Helped</p></div>
-    <div class="stat-item"><span>15+</span><p>Years Experience</p></div>
+    <div class="stat-item"><span>2000+</span><p>Students Helped</p></div>
+    <div class="stat-item"><span>20+</span><p>Years Experience</p></div>
     <div class="stat-item"><span>95%</span><p>Score Improvement Rate</p></div>
     <div class="stat-item"><span>4</span><p>Tests Covered</p></div>
     <div class="stat-item"><span>8</span><p>Locations Served</p></div>
@@ -369,7 +383,7 @@
       <div class="service-card">
         <div class="service-pill">Undergraduate Admissions</div>
         <h3>ACT Tutoring</h3>
-        <p>Average 5–10 point composite improvement. Expert coaching across English, Math, Reading, and the Science reasoning section — with a strong focus on the pacing skills the ACT demands.</p>
+        <p>Average 5–10 point composite improvement. Expert coaching across English, Math, Reading, and the optional Science reasoning section — with a strong focus on the pacing skills the ACT demands.</p>
         <a href="/ACT.html" class="service-link">Full ACT prep details →</a>
       </div>
       <div class="service-card">
@@ -596,7 +610,7 @@
       </div>
     </div>
     <div class="neil-bio">
-      <h2>Toronto's Test Prep Expert — 15+ Years, 1000+ Students</h2>
+      <h2>Toronto's Test Prep Expert — 20+ Years, 2000+ Students</h2>
       <p>Neil Chakraborty has been helping GTA students achieve dramatic standardized test score gains for over 15 years. Based in the Greater Toronto Area and serving students across Toronto, North York, Markham, Thornhill, Richmond Hill, and online worldwide, Neil brings a depth of expertise that few tutors can match.</p>
       <p>His background spans a double Master's degree from the University of Utah, a physics foundation that gives him an analytical edge on quantitative sections, and 25+ years in institutional research and data analytics — including at the University of Toronto, where he built an understanding of the Canadian academic landscape from the inside.</p>
       <p>As an Adjunct Professor at Seneca Polytechnic — one of Canada's largest colleges — Neil brings a rare combination of test prep expertise and active teaching experience. He also co-founded an MBA admissions consultancy, giving GMAT students a tutor who understands the full admissions picture.</p>
@@ -625,8 +639,12 @@
       <div class="faq-body">Absolutely — and many do. Canadian students applying to US universities are treated the same as American applicants for test score purposes. The SAT and ACT are offered at test centres across the GTA, including in Toronto, Markham, and surrounding areas. Neil advises GTA students on the full US admissions process, not just test prep.</div>
     </details>
     <details>
+      <summary>Which US universities require the SAT or ACT for 2026–27?</summary>
+      <div class="faq-body">Many top schools now do. For the 2026–27 cycle, Harvard, Yale, Dartmouth, Brown, Cornell, Penn, MIT, Stanford, Caltech, and Georgetown require SAT or ACT scores, and Princeton and Columbia will require them starting with the 2027–28 cycle. Policies change every year, so always confirm each school's current requirements — our <a href="/resources_us.html">US admissions resources page</a> tracks the latest updates.</div>
+    </details>
+    <details>
       <summary>Is the SAT or ACT better for GTA students?</summary>
-      <div class="faq-body">There's no universal answer — it depends on the student's strengths. The Ontario curriculum aligns somewhat more naturally with ACT Math (which goes up to trigonometry, similar to the Ontario Grade 12 Advanced Functions course). However, many GTA students perform better on the SAT due to its less time-pressured format. Neil can advise after a short diagnostic session.</div>
+      <div class="faq-body">There's no universal answer — it depends on the student's strengths. The Ontario curriculum aligns somewhat more naturally with ACT Math (which goes up to trigonometry, similar to the Ontario Grade 12 Advanced Functions course). However, many GTA students perform better on the SAT due to its less time-pressured format. The ACT's Science section is now optional, which also affects the comparison for some students. Neil can advise after a short diagnostic session.</div>
     </details>
     <details>
       <summary>Do Canadian universities require the SAT or ACT?</summary>
