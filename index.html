@@ -23,42 +23,207 @@
     <meta name="keywords" content="tutoring, math tutor, Physics tutor, SAT, ACT, GRE, GMAT, university admissions, Online, Canada, Toronto ">
     <meta name="author" content="Neil Chakraborty">
 
-    <!-- Structured data (FIXED: valid JSON, hasOfferCatalog now inside the LocalBusiness object, placeholder phone removed) -->
+    <!-- Structured data -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": [
+        "LocalBusiness",
+        "EducationalOrganization"
+      ],
+      "@id": "https://tutoringjedi.ca/#business",
       "name": "Tutoring Jedi",
-      "description": "Expert SAT, ACT, GRE and GMAT tutoring and university admissions counselling in Toronto.",
-      "url": "https://tutoringjedi.ca",
+      "alternateName": "TutoringJedi.ca",
+      "description": "One-on-one SAT, ACT, GRE and GMAT tutoring, university admissions counselling, high school Math and Physics and university Statistics tutoring in Toronto, the GTA, Ontario and online worldwide, taught by Neil Chakraborty.",
+      "url": "https://tutoringjedi.ca/",
+      "email": "tutoringjedi@gmail.com",
+      "image": "https://tutoringjedi.ca/teaching.jpg",
+      "logo": "https://tutoringjedi.ca/logo.png",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Toronto",
         "addressRegion": "ON",
         "addressCountry": "CA"
       },
-      "areaServed": ["Toronto", "Greater Toronto Area", "Ontario, Canada, Online"],
-      "founder": {
-        "@type": "Person",
-        "name": "Neil Chakraborty"
-      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Toronto"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Greater Toronto Area"
+        },
+        {
+          "@type": "City",
+          "name": "North York"
+        },
+        {
+          "@type": "City",
+          "name": "Markham"
+        },
+        {
+          "@type": "City",
+          "name": "Thornhill"
+        },
+        {
+          "@type": "City",
+          "name": "Richmond Hill"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ontario"
+        },
+        {
+          "@type": "Country",
+          "name": "Canada"
+        },
+        {
+          "@type": "Place",
+          "name": "Online (worldwide)"
+        }
+      ],
       "priceRange": "$$",
-      "serviceType": ["SAT Tutoring", "ACT Tutoring", "GRE Tutoring", "GMAT Tutoring", "University Admissions Counselling"],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "20:00"
+        }
+      ],
+      "founder": {
+        "@id": "https://tutoringjedi.ca/Meet_Neil.html#neil"
+      },
+      "employee": {
+        "@id": "https://tutoringjedi.ca/Meet_Neil.html#neil"
+      },
+      "knowsAbout": [
+        "SAT",
+        "ACT",
+        "GRE",
+        "GMAT",
+        "University admissions",
+        "High school math",
+        "Physics",
+        "Statistics"
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Tutoring Services",
         "itemListElement": [
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SAT Tutoring"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "ACT Tutoring"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GRE Tutoring"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GMAT Tutoring"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "University Admissions Counselling"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "High School Math & Physics Tutoring"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Statistics Tutoring"}}
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SAT Tutoring",
+              "url": "https://tutoringjedi.ca/SAT.html"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "ACT Tutoring",
+              "url": "https://tutoringjedi.ca/ACT.html"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "GRE Tutoring",
+              "url": "https://tutoringjedi.ca/GRE.html"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "GMAT Tutoring",
+              "url": "https://tutoringjedi.ca/GMAT.html"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "University Admissions Counselling",
+              "url": "https://tutoringjedi.ca/university-admissions.html"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "High School Math & Physics Tutoring",
+              "url": "https://tutoringjedi.ca/highschool-math-physics.html"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "University Statistics Tutoring",
+              "url": "https://tutoringjedi.ca/university-statistics.html"
+            }
+          }
         ]
       }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://tutoringjedi.ca/Meet_Neil.html#neil",
+      "name": "Neil Chakraborty",
+      "jobTitle": "Founder & Lead Tutor",
+      "url": "https://tutoringjedi.ca/Meet_Neil.html",
+      "image": "https://tutoringjedi.ca/Neil.jpg",
+      "worksFor": {
+        "@id": "https://tutoringjedi.ca/#business"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Utah"
+      },
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Adjunct Professor",
+        "description": "Adjunct Professor at Seneca Polytechnic"
+      },
+      "knowsAbout": [
+        "SAT",
+        "ACT",
+        "GRE",
+        "GMAT",
+        "University admissions",
+        "Physics",
+        "Statistics",
+        "Research methods",
+        "Business analytics"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://tutoringjedi.ca/#website",
+      "url": "https://tutoringjedi.ca/",
+      "name": "Tutoring Jedi",
+      "publisher": {
+        "@id": "https://tutoringjedi.ca/#business"
+      },
+      "inLanguage": "en-CA"
     }
-    </script>
+  ]
+}
+</script>
 
     <!-- Open Graph -->
     <meta property="og:title" content="Tutoring Jedi – Master Your Learning Journey">
@@ -130,6 +295,23 @@
             height: 70px;
             width: auto;
             flex-shrink: 0;
+        }
+
+        /* Logo text (a div, so the hero heading is the only h1) */
+        .header-text .site-title {
+            margin: 0.67em 0;
+            font-size: 2em;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: #1e3c72; color: #f59e0b;
+            font-size: 0.8rem; font-weight: 700;
+            letter-spacing: 0.1em; text-transform: uppercase;
+            padding: 4px 14px; border-radius: 50px; margin-bottom: 1.2rem;
         }
 
         .header-text p {
@@ -262,7 +444,7 @@
             flex: 1;
         }
 
-        .hero-text h2 {
+        .hero-text h1 {
             font-size: 2.75rem;
             color: #1e3c72;
             margin-bottom: 1.5rem;
@@ -783,7 +965,7 @@
             /* Hero: stack text above image on phones */
             .hero { padding: 3rem 1rem; }
             .hero-wrapper { flex-direction: column; gap: 2rem; text-align: center; }
-            .hero-text h2 { font-size: 2rem; }
+            .hero-text h1 { font-size: 2rem; }
             .hero-text p { font-size: 1.05rem; }
             .hero-image-container { max-width: 100%; width: 100%; }
             .about-tile { padding: 1.5rem; }
@@ -807,11 +989,11 @@
         </div>
 
         <div class="header-text">
-            <h1>
+            <div class="site-title">
                 <span class="logo-white">Tutoring</span>
                 <span class="logo-gold">Jedi</span>
                 <span class="logo-ca">.ca</span>
-            </h1>
+            </div>
             <div class="logo-divider"></div>
             <p>Let the Wisdom be with You</p>
         </div>
@@ -873,7 +1055,8 @@
     <section class="hero">
         <div class="hero-wrapper">
             <div class="hero-text">
-                <h2>Master Your Learning Journey</h2>
+                <div class="hero-badge">SAT · ACT · GRE · GMAT Tutoring · Toronto, GTA &amp; Online</div>
+                <h1>Master Your Learning Journey</h1>
                 <p>Personalized tutoring in test prep (SAT, ACT, GRE &amp; GMAT), high school math and sciences plus university-level Statistics courses.
                     Taught by a higher education expert and college instructor with 25+ years of experience - Neil Chakraborty. Neil also engages in university admission counselling and has sent students to top schools around the world.
                 </p>

@@ -32,7 +32,7 @@
     /* ── Header ── */
     header { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: #ffffff; padding: 1.5rem 2rem; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
     .header-content { display: flex; align-items: center; flex-direction: row; justify-content: center; gap: 0.5rem; width: 100%; }
-    .header-text h1 { margin: 0; font-size: 2rem; font-family: 'Poppins', sans-serif; font-weight: 700; }
+    .header-text .site-title { margin: 0; font-size: 2rem; font-family: 'Poppins', sans-serif; font-weight: 700; }
     .header-text p { margin: 0.25rem 0 0 0; font-size: 1rem; opacity: 0.95; font-style: italic; color: #ffffff; }
     .logo-white { color: #ffffff; }
     .logo-gold { color: #f59e0b; text-shadow: 0 0 16px rgba(245,158,11,0.4); }
@@ -68,8 +68,8 @@
     .hero-wrapper { display: flex; align-items: center; justify-content: space-between; gap: 4rem; max-width: 1200px; margin: 0 auto; }
     .hero-text { flex: 1; }
     .hero-badge { display: inline-block; background: #1e3c72; color: #f59e0b; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 14px; border-radius: 50px; margin-bottom: 1.2rem; }
-    .hero-text h2 { font-size: 2.75rem; color: #1e3c72; margin-bottom: 1.5rem; line-height: 1.2; }
-    .hero-text h2 em { font-style: normal; color: #f59e0b; }
+    .hero-text h1 { font-size: 2.75rem; color: #1e3c72; margin-bottom: 1.5rem; line-height: 1.2; }
+    .hero-text h1 em { font-style: normal; color: #f59e0b; }
     .hero-text p { font-size: 1.15rem; color: #475569; margin-bottom: 2rem; }
     .cta-button { display: inline-block; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; padding: 1rem 2.5rem; border-radius: 50px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(245,158,11,0.3); font-family: 'Poppins', sans-serif; }
     .cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(245,158,11,0.4); color: white; }
@@ -200,13 +200,156 @@
       .steps-grid { grid-template-columns: 1fr; }
       .coverage-grid { grid-template-columns: 1fr; }
       h2 { font-size: 1.8rem; }
-      .hero-text h2 { font-size: 2rem; }
+      .hero-text h1 { font-size: 2rem; }
     }
   </style>
 <style>
 /* Accessible contrast for small accent text on light backgrounds */
 .tag, .tutor-title { color: #b45309; }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://tutoringjedi.ca/highschool-math-physics.html#service",
+      "name": "High School Math & Physics Tutoring",
+      "serviceType": "High School Math and Physics Tutoring",
+      "description": "High school Math and Physics tutoring (Grades 9–12) in Toronto and online. Neil Chakraborty rebuilds fundamentals for lasting grade gains.",
+      "url": "https://tutoringjedi.ca/highschool-math-physics.html",
+      "provider": {
+        "@type": "LocalBusiness",
+        "@id": "https://tutoringjedi.ca/#business",
+        "name": "Tutoring Jedi",
+        "url": "https://tutoringjedi.ca/"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Toronto"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Greater Toronto Area"
+        },
+        {
+          "@type": "City",
+          "name": "North York"
+        },
+        {
+          "@type": "City",
+          "name": "Markham"
+        },
+        {
+          "@type": "City",
+          "name": "Thornhill"
+        },
+        {
+          "@type": "City",
+          "name": "Richmond Hill"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ontario"
+        },
+        {
+          "@type": "Country",
+          "name": "Canada"
+        },
+        {
+          "@type": "Place",
+          "name": "Online (worldwide)"
+        }
+      ],
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "name": "Online one-on-one tutoring via video call",
+        "serviceUrl": "https://tutoringjedi.ca/Contact.html"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Free 30-minute consultation",
+        "price": "0",
+        "priceCurrency": "CAD",
+        "url": "https://tutoringjedi.ca/Contact.html"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tutoringjedi.ca/highschool-math-physics.html#faq",
+      "url": "https://tutoringjedi.ca/highschool-math-physics.html",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "My child is failing — is it too late to turn things around?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It's rarely too late. Neil has helped students go from failing grades to passing — and from passing to strong — even late in the semester. The key is identifying the foundational gap quickly and working efficiently. The earlier you reach out the better, but don't wait for the situation to be perfect before starting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you follow the Ontario curriculum?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Neil is fully familiar with the Ontario secondary school curriculum for Mathematics (MPM1D, MPM2D, MCR3U, MHF4U, MCV4U) and Physics (SPH3U, SPH4U). Sessions are built around the student's current course, textbook, and upcoming assessments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My child's university offer depends on their Grade 12 grade. Can you help?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — and this is one of the most common situations Neil handles. He has helped many students protect and improve conditional university offers, working intensively on exactly the material that matters most before the deadline. Contact Neil as early as possible so there's enough time to make a meaningful difference."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you tutor Grade 7 and 8 students as well?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. While the focus of this page is Grades 9–12, Neil also works with Grade 7 and 8 students — particularly those who want to build a strong foundation before high school, or who are preparing for gifted/enriched program assessments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should my child have sessions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most students, one or two sessions per week is the right cadence — enough to make consistent progress without overwhelming the student's existing workload. Students with upcoming exams or urgent grade issues sometimes benefit from more intensive short-term schedules. Neil will advise after the first session."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer in-person and online sessions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both. Neil tutors in-person in Toronto and the Greater Toronto Area, and online via video call for students across Ontario and beyond. The approach and results are equally strong in both formats."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tutoringjedi.ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "High School Math & Physics Tutoring",
+          "item": "https://tutoringjedi.ca/highschool-math-physics.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
  
@@ -218,7 +361,7 @@
       <div class="pen-hilt"></div><div class="pen-collar"></div><div class="pen-nib"></div>
     </div>
     <div class="header-text">
-      <h1><span class="logo-white">Tutoring</span><span class="logo-gold">Jedi</span><span class="logo-ca">.ca</span></h1>
+      <div class="site-title"><span class="logo-white">Tutoring</span><span class="logo-gold">Jedi</span><span class="logo-ca">.ca</span></div>
       <div class="logo-divider"></div>
       <p>Let the Wisdom be with You</p>
     </div>
@@ -276,7 +419,7 @@
   <div class="hero-wrapper">
     <div class="hero-text">
       <div class="hero-badge">High School · Grades 9–12 · Toronto &amp; Online</div>
-      <h2>High School <em>Math &amp; Physics</em><br>Tutoring That Actually Works</h2>
+      <h1>High School <em>Math &amp; Physics</em><br>Tutoring That Actually Works</h1>
       <p>Whether rebuilding fundamentals from scratch or pushing beyond grade level, every session is tailored to exactly where the student is right now. Consistent results across Grade 9–12 Math and Physics — including students protecting university offer conditions.</p>
       <a href="/Contact.html" class="cta-button">Schedule Your Free Consultation</a>
     </div>
