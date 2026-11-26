@@ -1,33 +1,42 @@
 # All crawlers, including AI assistants and AI search engines, are welcome.
 User-agent: *
 Allow: /
+Disallow: /homework/
 
 # Anthropic (Claude)
 User-agent: ClaudeBot
 Allow: /
+Disallow: /homework/
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /homework/
 
 User-agent: Claude-User
 Allow: /
+Disallow: /homework/
 
 # OpenAI (ChatGPT)
 User-agent: GPTBot
 Allow: /
+Disallow: /homework/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /homework/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /homework/
 
 # Perplexity
 User-agent: PerplexityBot
 Allow: /
+Disallow: /homework/
 
 # Google AI (Gemini)
 User-agent: Google-Extended
 Allow: /
+Disallow: /homework/
 
 Sitemap: https://tutoringjedi.ca/sitemap.xml
