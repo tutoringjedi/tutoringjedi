@@ -41,7 +41,7 @@
     /* ── Header ── */
     header { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: #ffffff; padding: 1.5rem 2rem; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
     .header-content { display: flex; align-items: center; flex-direction: row; justify-content: center; gap: 0.5rem; width: 100%; }
-    .header-text h1 { margin: 0; font-size: 2rem; font-family: 'Poppins', sans-serif; font-weight: 700; }
+    .header-text .site-title { margin: 0; font-size: 2rem; font-family: 'Poppins', sans-serif; font-weight: 700; }
     .header-text p { margin: 0.25rem 0 0 0; font-size: 1rem; opacity: 0.95; font-style: italic; color: #ffffff; }
     .logo-white { color: #ffffff; }
     .logo-gold  { color: #f59e0b; text-shadow: 0 0 16px rgba(245,158,11,0.4); }
@@ -77,8 +77,8 @@
     .hero-wrapper { display: flex; align-items: center; justify-content: space-between; gap: 4rem; max-width: 1200px; margin: 0 auto; }
     .hero-text { flex: 1; }
     .hero-badge { display: inline-block; background: #1e3c72; color: #f59e0b; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 14px; border-radius: 50px; margin-bottom: 1.2rem; }
-    .hero-text h2 { font-size: 2.75rem; color: #1e3c72; margin-bottom: 1.5rem; line-height: 1.2; }
-    .hero-text h2 em { font-style: normal; color: #f59e0b; }
+    .hero-text h1 { font-size: 2.75rem; color: #1e3c72; margin-bottom: 1.5rem; line-height: 1.2; }
+    .hero-text h1 em { font-style: normal; color: #f59e0b; }
     .hero-text p { font-size: 1.15rem; color: #475569; margin-bottom: 2rem; }
     .cta-button { display: inline-block; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; padding: 1rem 2.5rem; border-radius: 50px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(245,158,11,0.3); font-family: 'Poppins', sans-serif; }
     .cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(245,158,11,0.4); color: white; }
@@ -244,7 +244,7 @@
       .coverage-grid { grid-template-columns: 1fr; }
       .score-callout { grid-template-columns: 1fr; }
       h2 { font-size: 1.8rem; }
-      .hero-text h2 { font-size: 2rem; }
+      .hero-text h1 { font-size: 2rem; }
       .compare-table { font-size: 0.82rem; }
       .compare-table th, .compare-table td { padding: 0.65rem 0.75rem; }
     }
@@ -253,6 +253,149 @@
 /* Accessible contrast for small accent text on light backgrounds */
 .tag, .score-label, .tutor-title { color: #b45309; }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://tutoringjedi.ca/GMAT.html#service",
+      "name": "GMAT Tutoring",
+      "serviceType": "GMAT Tutoring",
+      "description": "Expert GMAT tutoring in Toronto and online. Neil Chakraborty delivers average 70–100 point gains through targeted, gap-focused coaching.",
+      "url": "https://tutoringjedi.ca/GMAT.html",
+      "provider": {
+        "@type": "LocalBusiness",
+        "@id": "https://tutoringjedi.ca/#business",
+        "name": "Tutoring Jedi",
+        "url": "https://tutoringjedi.ca/"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Toronto"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Greater Toronto Area"
+        },
+        {
+          "@type": "City",
+          "name": "North York"
+        },
+        {
+          "@type": "City",
+          "name": "Markham"
+        },
+        {
+          "@type": "City",
+          "name": "Thornhill"
+        },
+        {
+          "@type": "City",
+          "name": "Richmond Hill"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ontario"
+        },
+        {
+          "@type": "Country",
+          "name": "Canada"
+        },
+        {
+          "@type": "Place",
+          "name": "Online (worldwide)"
+        }
+      ],
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "name": "Online one-on-one tutoring via video call",
+        "serviceUrl": "https://tutoringjedi.ca/Contact.html"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Free 30-minute consultation",
+        "price": "0",
+        "priceCurrency": "CAD",
+        "url": "https://tutoringjedi.ca/Contact.html"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tutoringjedi.ca/GMAT.html#faq",
+      "url": "https://tutoringjedi.ca/GMAT.html",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the GMAT Focus Edition, and how is it different from the old GMAT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The GMAT Focus Edition, launched in 2023, replaced the classic GMAT. Key changes: it's shorter (2h15m vs 3h30m), Sentence Correction has been removed from Verbal, and a new Data Insights section combines Data Sufficiency with data interpretation question types. The score scale is now 205–805. Neil is fully up to date on the Focus Edition format and trains students specifically for it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to improve my GMAT score significantly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most students see a 50–80 point improvement in 8–10 weeks of consistent work. A 100-point gain typically requires 12–16 weeks. Neil will set realistic expectations after your diagnostic — and won't push you into more sessions than you need."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the GMAT or GRE better for MBA admissions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both are accepted equally by all major MBA programs. The GMAT historically carried a slight signal of business focus, but that gap has largely closed. The right choice depends on your strengths: stronger at logical reasoning without a calculator → GMAT. Stronger at vocabulary-heavy verbal and less concerned about no-calculator math → GRE. Neil advises on this during the free consultation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a calculator on the GMAT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No calculator is permitted in the Quantitative Reasoning section — one of the key distinctions from the GRE. An on-screen calculator is available in the Data Insights section only. Neil trains you to do GMAT Quant efficiently without a calculator, which becomes natural with practice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do business schools see all my GMAT attempts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can choose which scores to send (score select), but many schools ask for all scores or will see them through other means. Neil advises on retake strategy — including whether a retake is worth it for your specific profile and target programs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you also help with the MBA application itself?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Beyond GMAT coaching, Neil offers full MBA admissions counselling — school selection, essay strategy, application review, and interview preparation. His students have been admitted to Wharton, Kellogg, Booth, Rotman, Ivey, and other top programs. Ask about this during your consultation."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tutoringjedi.ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "GMAT Tutoring",
+          "item": "https://tutoringjedi.ca/GMAT.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -268,7 +411,7 @@
       <div class="pen-nib"></div>
     </div>
     <div class="header-text">
-      <h1><span class="logo-white">Tutoring</span><span class="logo-gold">Jedi</span><span class="logo-ca">.ca</span></h1>
+      <div class="site-title"><span class="logo-white">Tutoring</span><span class="logo-gold">Jedi</span><span class="logo-ca">.ca</span></div>
       <div class="logo-divider"></div>
       <p>Let the Wisdom be with You</p>
     </div>
@@ -326,7 +469,7 @@
   <div class="hero-wrapper">
     <div class="hero-text">
       <div class="hero-badge">GMAT Test Prep · Toronto &amp; Online</div>
-      <h2>Ace the <em>GMAT</em><br>and Get Into Your MBA Program</h2>
+      <h1>Ace the <em>GMAT</em><br>and Get Into Your MBA Program</h1>
       <p>Strategic, diagnostic-driven GMAT coaching that consistently delivers 70–100 point score improvements. Neil has co-founded an MBA admissions consultancy — giving you an advisor who understands both the exam and the admissions process end to end.</p>
       <a href="/Contact.html" class="cta-button">Schedule Your Free Consultation</a>
     </div>

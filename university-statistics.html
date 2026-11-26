@@ -32,7 +32,7 @@
     /* ── Header ── */
     header { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: #ffffff; padding: 1.5rem 2rem; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
     .header-content { display: flex; align-items: center; flex-direction: row; justify-content: center; gap: 0.5rem; width: 100%; }
-    .header-text h1 { margin: 0; font-size: 2rem; font-family: 'Poppins', sans-serif; font-weight: 700; }
+    .header-text .site-title { margin: 0; font-size: 2rem; font-family: 'Poppins', sans-serif; font-weight: 700; }
     .header-text p { margin: 0.25rem 0 0 0; font-size: 1rem; opacity: 0.95; font-style: italic; color: #ffffff; }
     .logo-white { color: #ffffff; }
     .logo-gold { color: #f59e0b; text-shadow: 0 0 16px rgba(245,158,11,0.4); }
@@ -68,8 +68,8 @@
     .hero-wrapper { display: flex; align-items: center; justify-content: space-between; gap: 4rem; max-width: 1200px; margin: 0 auto; }
     .hero-text { flex: 1; }
     .hero-badge { display: inline-block; background: #1e3c72; color: #f59e0b; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 14px; border-radius: 50px; margin-bottom: 1.2rem; }
-    .hero-text h2 { font-size: 2.75rem; color: #1e3c72; margin-bottom: 1.5rem; line-height: 1.2; }
-    .hero-text h2 em { font-style: normal; color: #f59e0b; }
+    .hero-text h1 { font-size: 2.75rem; color: #1e3c72; margin-bottom: 1.5rem; line-height: 1.2; }
+    .hero-text h1 em { font-style: normal; color: #f59e0b; }
     .hero-text p { font-size: 1.15rem; color: #475569; margin-bottom: 2rem; }
     .cta-button { display: inline-block; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; padding: 1rem 2.5rem; border-radius: 50px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(245,158,11,0.3); font-family: 'Poppins', sans-serif; }
     .cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(245,158,11,0.4); color: white; }
@@ -195,7 +195,7 @@
       .courses-grid { grid-template-columns: 1fr; }
       .steps-grid { grid-template-columns: 1fr; }
       h2 { font-size: 1.8rem; }
-      .hero-text h2 { font-size: 2rem; }
+      .hero-text h1 { font-size: 2rem; }
     }
   </style>
 <style>
@@ -203,6 +203,149 @@
 .tutor-title { color: #b45309; }
 .tool-desc { color: #64748b; }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://tutoringjedi.ca/university-statistics.html#service",
+      "name": "University Statistics Tutoring",
+      "serviceType": "Statistics Tutoring",
+      "description": "University Statistics, Research Methods, Business Analytics and Machine Learning tutoring in Toronto and online from Seneca adjunct Neil Chakraborty.",
+      "url": "https://tutoringjedi.ca/university-statistics.html",
+      "provider": {
+        "@type": "LocalBusiness",
+        "@id": "https://tutoringjedi.ca/#business",
+        "name": "Tutoring Jedi",
+        "url": "https://tutoringjedi.ca/"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Toronto"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Greater Toronto Area"
+        },
+        {
+          "@type": "City",
+          "name": "North York"
+        },
+        {
+          "@type": "City",
+          "name": "Markham"
+        },
+        {
+          "@type": "City",
+          "name": "Thornhill"
+        },
+        {
+          "@type": "City",
+          "name": "Richmond Hill"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ontario"
+        },
+        {
+          "@type": "Country",
+          "name": "Canada"
+        },
+        {
+          "@type": "Place",
+          "name": "Online (worldwide)"
+        }
+      ],
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "name": "Online one-on-one tutoring via video call",
+        "serviceUrl": "https://tutoringjedi.ca/Contact.html"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Free 30-minute consultation",
+        "price": "0",
+        "priceCurrency": "CAD",
+        "url": "https://tutoringjedi.ca/Contact.html"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tutoringjedi.ca/university-statistics.html#faq",
+      "url": "https://tutoringjedi.ca/university-statistics.html",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "I have an assignment due soon — can we work on it directly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many students come to Neil with a specific assignment, midterm, or project deadline in mind. Sessions can be focused entirely on understanding the concepts needed to complete a specific task. Neil won't do your work for you — but he will make sure you understand it well enough to complete it confidently yourself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I failed my midterm. Can I still turn this course around?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In most cases, yes. Many students have gone from a failing midterm to a passing or strong final grade after working with Neil. The key is identifying where the conceptual understanding broke down and rebuilding efficiently. Contact Neil as soon as possible after a disappointing result — the more time available before the final, the better."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you help with thesis and dissertation statistics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Neil supports graduate students at the thesis and dissertation stage — including choosing appropriate statistical tests, running analyses in SPSS, R, or Python, interpreting output, and writing up results in APA or other required formats. This is one of the most common requests from Master's and PhD students."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What statistical software do you tutor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SPSS, R (including RStudio and tidyverse), Python (pandas, scipy, statsmodels, scikit-learn), Excel, SAS, Tableau, and Power BI. Most students working on research methods or thesis chapters need SPSS or R. Students in analytics or data science programs typically need Python or R. Neil will adapt to whatever your course or program requires."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I'm not a math person. Can I really learn Statistics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — and Neil hears this constantly. Most university Statistics courses require very little advanced math. What they require is clear logical thinking and the ability to understand what a statistical procedure is actually doing. Neil's plain-language approach is specifically designed for students who don't think of themselves as \"math people\" — and it works."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you tutor online or in-person?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both. Neil tutors in-person in Toronto and the GTA, and online for students at universities across Ontario, Canada, and internationally. For statistics tutoring in particular, online sessions work extremely well — screen sharing makes it easy to work through SPSS output, R scripts, or Python notebooks together in real time."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tutoringjedi.ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "University Statistics Tutoring",
+          "item": "https://tutoringjedi.ca/university-statistics.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -214,7 +357,7 @@
       <div class="pen-hilt"></div><div class="pen-collar"></div><div class="pen-nib"></div>
     </div>
     <div class="header-text">
-      <h1><span class="logo-white">Tutoring</span><span class="logo-gold">Jedi</span><span class="logo-ca">.ca</span></h1>
+      <div class="site-title"><span class="logo-white">Tutoring</span><span class="logo-gold">Jedi</span><span class="logo-ca">.ca</span></div>
       <div class="logo-divider"></div>
       <p>Let the Wisdom be with You</p>
     </div>
@@ -271,7 +414,7 @@
   <div class="hero-wrapper">
     <div class="hero-text">
       <div class="hero-badge">University Level · Toronto &amp; Online</div>
-      <h2>University <em>Statistics</em> Tutoring<br>From an Actual Professor</h2>
+      <h1>University <em>Statistics</em> Tutoring<br>From an Actual Professor</h1>
       <p>Struggling with Stats, Research Methods, Business Analytics, or Machine Learning? Neil is an Adjunct Professor who teaches these courses at the post-secondary level — and tutors them with the same depth, in plain language, one-on-one.</p>
       <a href="/Contact.html" class="cta-button">Schedule Your Free Consultation</a>
     </div>
