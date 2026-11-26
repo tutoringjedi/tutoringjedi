@@ -91,8 +91,9 @@
         .section-intro { text-align:center; color:#475569; font-size:1rem; margin-bottom:2.5rem; max-width:700px; margin-left:auto; margin-right:auto; }
         .cat-header { display:flex; align-items:center; gap:1rem; margin:2.5rem 0 1.25rem; }
         .cat-header h3 { font-size:1.05rem; color:#1e3c72; text-transform:uppercase; letter-spacing:.08em; margin:0; white-space:nowrap; }
+        @media (max-width:480px){ .cat-header h3 { white-space:normal; } .cat-line { min-width:2rem; } }
         .cat-line { flex:1; height:2px; background:linear-gradient(to right,#2a5298,transparent); border-radius:2px; }
-        .news-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1.5rem; }
+        .news-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr)); gap:1.5rem; }
         .news-card { background:#fff; border-radius:14px; box-shadow:0 4px 16px rgba(0,0,0,.07); border-left:4px solid #2a5298; padding:1.5rem; transition:transform .25s,box-shadow .25s; display:flex; flex-direction:column; gap:.5rem; }
         .news-card:hover { transform:translateY(-5px); box-shadow:0 10px 28px rgba(30,60,114,.15); }
         .news-card.gold { border-left-color:#f59e0b; }

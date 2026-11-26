@@ -206,6 +206,12 @@
         .about-tile {
             background: #ffffff;
             padding: 2rem;
+            transition: background 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .about-tile:hover {
+            background: #eef4ff;
+            box-shadow: inset 4px 0 0 #f59e0b;
         }
 
         .about-tile-alt {
@@ -225,7 +231,7 @@
         }
 
         .about-tile h3 {
-            color: white;
+            color: #1e3c72;
             font-size: 1.15rem;
             margin: 0 0 0.6rem;
         }
@@ -647,6 +653,8 @@
 
         #calendly h2 { margin-bottom: 0.5rem; }
 
+        #calendly { text-align: center; padding-left: 1rem; padding-right: 1rem; }
+
         #calendly .calendly-subtitle {
             color: #475569;
             font-size: 1.1rem;
@@ -771,6 +779,16 @@
             .submenu li a { padding-left: 2.25rem; }
 
             .about-grid { grid-template-columns: 1fr; }
+
+            /* Hero: stack text above image on phones */
+            .hero { padding: 3rem 1rem; }
+            .hero-wrapper { flex-direction: column; gap: 2rem; text-align: center; }
+            .hero-text h2 { font-size: 2rem; }
+            .hero-text p { font-size: 1.05rem; }
+            .hero-image-container { max-width: 100%; width: 100%; }
+            .about-tile { padding: 1.5rem; }
+            .stats-bar .container { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1rem; }
+            .stats-bar .stat-item:last-child { grid-column: 1 / -1; }
         }
     </style>
 </head>
